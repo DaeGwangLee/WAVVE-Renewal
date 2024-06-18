@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+
+  <style>
+
+    #summer-recommand {
+      background-image: url('img/아쿠아맨(서머시즌 배경).png');
+      height: 960px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .summer-recommand-slider-container {
+      margin: 0 auto;
+      /* border: 1px solid red; */
+      padding: 16px;
+      width: 1249px;
+      height: 410px;
+      box-shadow: none;
+      background: rgba( 0, 0, 0, 0.5 );
+      position: absolute;
+      bottom: 8px;      
+
+      .summer-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .label {
+          font-size: 24px;
+          color: #fff;
+          font-weight: bold;
+        }
+
+        .btn-more {
+          text-decoration: none;
+          font-size: 16px;
+          color: #a5a5a5;          
+        }
+      }
+
+      /* .bx-wrapper .bx-controls-direction a.disabled {
+        display: block;
+      } */
+
+      .bx-wrapper {
+        border: none;
+        box-shadow: none;
+        background-color: transparent;
+
+        li {
+          width: 240px;
+          height: 360px;
+          border-radius: 4px;
+
+          img {
+            width: 240px;
+            height: 360px;
+            border-radius: 4px;
+          }
+        }
+      }
+
+      .bx-pager {
+        display: none;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section id="summer-recommand">
+    <div class="summer-recommand-slider-container">
+      <div class="summer-title">
+        <span class="label">서머시즌 시원하게 GO!</span><a href="" class="btn-more">더보기 ></a>
+      </div>
+      <ul class="summer-bxslider">        
+
+        <li><img src="img/서머시즌-아쿠아맨.png" /></li>
+        <li><img src="img/서머시즌-존윅4.png" /></li>
+        <li><img src="img/서머시즌-캐리비안의 해적.png" /></li>
+        <li><img src="img/서머시즌-토모로우.png" /></li>
+        <li><img src="img/서머시즌-한산.png" /></li>
+        
+      </ul>
+
+    </div>
+    <script>
+
+      $('.summer-bxslider').bxSlider({
+        minSlides: 5,
+        maxSlides: 5,
+        slideWidth: 300,
+        slideMargin: 12,
+        moveSlides: 1
+      });
+
+    </script>
+  </section>
+
+</html>

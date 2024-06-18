@@ -1,0 +1,14 @@
+
+1. 반응형을 interaction에 포함시켜야 하는지?
+ex) @media screen and (max-width:1100px) {}
+
+2. 메인섹션 좌측 사이드바 호출 후, 윈도우창이 태블릿크기로 이하로 작아졌을 때, 
+사이드바 호출 버튼이 사라지지 않음. <---- 해결했음, but
+
+2-1. 좌측 사이드바 close 시 transition이 왜 미적용되는지?
+
+3. objection-fit 속성은 @media screen and (max-width:1100px) {}에서 우선하는지?
+
+4. 창작 및 자기소개 통합해서 제작해도 되는지?
+
+5. 오버워치 ppt와 받아쓰기 폼을 통합.

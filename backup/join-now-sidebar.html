@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/interaction.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+
+    <style>
+        :root {
+            --color-wavve-blue: #00a7f6;
+            --color-wavve-black: #040713;
+        }
+
+        body {
+            background-color: var(--color-wavve-black);
+            height: 10000px;
+        }
+
+        #first-box {
+            width: 100%;
+            height: 100vh;
+            background: green;
+
+
+            h1 {
+                /* text-align: center; */
+
+            }
+        }
+
+        #second-box {
+            width: 100%;
+            height: 100vh;
+            background: yellow;
+            position: relative;
+        }
+
+        /* 여기서부터 복사 */
+        #fixed {
+            position: relative;
+
+            .fixed-tab {
+                position: fixed;
+                top: 20%;
+                left: 0px;
+                width: 120px;
+                left: -150px;
+                height: 100px;
+                padding: 16px 32px 16px 8px;
+                box-sizing: border-box;
+                border-radius: 0 50px 50px 0;
+                background-color: var(--color-wavve-blue);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: 1s;
+                cursor: pointer;
+                z-index: 200;
+
+                &.appear {
+                    left: 0px;
+                }
+
+                &.active {
+                    opacity: 0;
+                }
+
+                .fixed-tab-inner {
+                    width: 150px;
+                    height: 100px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    text-align: center;
+                    gap: 2px;
+
+                    h3 {
+                        font-size: 31px;
+                        color: #fff;
+                        font-weight: bold;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        color: #fff;
+                        font-weight: bold;
+
+                    }
+                }
+            }
+
+            .sidebar {
+                position: fixed;
+                left: -500px;
+                bottom: 0px;
+                max-width: 400px;
+                height: 100vh;
+                background: rgba(0, 0, 0, 0.9);
+                padding: 48px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                box-sizing: border-box;
+                transition: 1s;
+                z-index: 999;
+
+                &.active {
+                    left: 0px;
+                }
+
+                .sidebar-container {
+                    height: fit-content;
+                    text-align: center;
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: stretch;
+                    flex-wrap: wrap;
+                    gap: 16px;
+
+                    div {
+
+                        h1 {
+                            font-size: 40px;
+                            font-weight: bold;
+                            color: #fff;
+                            margin-bottom: 16px;
+                        }
+
+                        p {
+                            font-size: 24px;
+                            margin-bottom: 8px;
+                            color: gray;
+                            margin-bottom: 32px;
+                        }
+
+                        button {
+                            width: 100%;
+                            height: 60px;
+                            background-color: var(--color-wavve-blue);
+                            border-radius: 4px;
+                            font-size: 16px;
+                            color: #fff;
+                            cursor: pointer;
+                            border: none;
+                            display: block;
+                        }
+
+                        .sidebar-close-btn {
+                            font-size: 40px;
+                            color: white;
+                            text-align: right;
+                            text-decoration: none;
+                            top: 10%;
+                            right: 10%;
+                            background-color: transparent;
+                        }
+
+                        h2 {
+                            font-size: 32px;
+                            margin-bottom: 8px;
+                            font-weight: bold;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+
+            .top-btn {
+                width: 50px;
+                height: 50px;
+                display: none;
+                position: fixed;
+                bottom: 20px;
+                right: 30px;
+                z-index: 99;
+                font-size: 18px;
+                border: none;
+                /* outline: none; */
+                background-color: blue;
+                color: white;
+                cursor: pointer;
+                /* padding: 15px; */
+                border-radius: 50%;
+                box-sizing: border-box;
+
+                &:hover {
+                    background-color: red;
+                }
+            }
+
+            /* .top-btn:hover {
+                background-color: red;
+            } */
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <section id="first-box">
+        <h1>
+            블라블라블라블라블라블라블라블라블라블라블라
+        </h1>
+    </section>
+    <section id="second-box">
+
+    </section>
+
+    <section id="fixed">
+
+        <div class="fixed-tab">
+            <div class="fixed-tab-inner">
+                <h3>30일</h3>
+                <p>무료체험</p>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="sidebar-container">
+                <div>
+                    <button class="sidebar-close-btn">X</button>
+                </div>
+                <div>
+                    <h1>첫달은 100원!!!</h1>
+                    <p>첫달은 100원만 내시고,<br>한달 후에 다시 결정하세요.</p>
+                </div>
+                <div>
+                    <h2>웨이브 베이직</h2>
+                    <button>월 ₩7,900원</button>
+                </div>
+                <div>
+                    <h2>웨이브 스탠다드</h2>
+                    <button>월 ₩10.900원</button>
+                </div>
+                <div>
+                    <h2>웨이브 프리미엄</h2>
+                    <button>월 ₩13,900원</button>
+                </div>
+            </div>
+        </div>
+
+        <button onclick="topFunction()" class="top-btn" title="Go to top">Top</button>
+
+    </section>
+
+
+
+    <script>
+
+        const secondBox = document.querySelector('#second-box');
+        const fixedTab = document.querySelector('.fixed-tab');
+        const sidebar = document.querySelector('.sidebar');
+        const sidebarCloseBtn = document.querySelector('.sidebar-close-btn');
+
+        window.addEventListener('scroll', () => {
+
+            if (secondBox.getBoundingClientRect().bottom < window.innerHeight) {
+
+                fixedTab.classList.add('appear');
+
+                fixedTab.addEventListener("click", () => {
+
+                    sidebar.classList.add('active');
+                    fixedTab.classList.add('active');
+                });
+
+                sidebarCloseBtn.addEventListener("click", () => {
+                    sidebar.classList.remove('active');
+                    fixedTab.classList.remove('active');
+                });
+
+            } else {
+                fixedTab.classList.remove('appear');
+            }
+        });
+
+        // Get the button
+        const topBtn = document.querySelector(".top-btn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topBtn.style.display = "block";
+            } else {
+                topBtn.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
+
+</body>
+
+</html>

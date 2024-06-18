@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/interaction.css">
+    <style>
+        body {
+            background-color: #000;
+        }
+
+        /* 여기서부터 복사 */
+
+        .faq-container {
+            margin: 0 auto;
+            padding: 0 550px;
+            text-align: center;
+        }
+
+        .faq-container>h1 {
+            color: #fff;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 21.44px 0px;
+        }
+
+        ul {
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li:first-of-type>.button {
+                border-top-left-radius: 16px;
+                border-top-right-radius: 16px;
+            }
+
+            li:last-of-type>.button,
+            li:last-of-type>.content {
+                border-bottom-left-radius: 16px;
+                border-bottom-right-radius: 16px;
+            }
+
+            li.on:last-of-type>.button {
+                border-radius: 0px;
+            }
+
+            li {
+
+                .button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+                    color: #fff;
+                    background-color: transparent;
+                    border: 1px solid gray;
+                    cursor: pointer;
+                    padding: 16px;
+
+                    h2 {
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+
+                    img {
+                        width: 25px;
+                        height: 25px;
+                        transition: 0.5s;
+                    }
+                }
+
+                .content {
+                    display: none;
+                    margin: 0;
+                    background-color: transparent;
+                    border: 1px solid gray;
+                    padding: 16px;
+                    text-align: left;
+
+                    p {
+                        line-height: 24px;
+                        color: #fff;
+                        font-weight: bold;
+                        opacity: 0.8;
+                    }
+                }
+
+                &.on {
+
+                    .button {
+                        font-weight: bold;
+
+                        img {
+                            transform: rotate(180deg);
+                        }
+                    }
+
+                    .content {
+                        display: block;
+                    }
+                }
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <section id="faq">
+        <div class="faq-container">
+            <h1>자주 묻는 질문</h1>
+            <ul>
+                <li>
+                    <button class="button">
+                        <h2>Q. 웨이브가 무엇인가요?</h2><img src="img/icon-arrow-down.svg" alt="화살표 표시">
+                    </button>
+                    <div class="content">
+                        <p>
+                            웨이브는 국내 컨텐츠를 거의 모두 볼 수 있는 스트리밍 서비스입니다. (일부 콘텐츠 제외)
+                            <br>
+                            주기적으로 업데이트 되는 국내 예능부터 영화, 애니메이션, 다큐멘터리까지 다채로운 콘텐츠를 광고 없이 시청하실 수 있습니다.
+                        </p>
+                    </div>
+
+                </li>
+                <li>
+                    <button class="button">
+                        <h2>Q. 웨이브에서 어떤 컨텐츠를 시청할 수 있나요?</h2><img src="img/icon-arrow-down.svg" alt="화살표 표시">
+                    </button>
+                    <div class="content">
+                        <p>
+                            웨이브는 새로운 콘텐츠를 계속해서 추가하고 있습니다.<br>
+                            최신 공개작과 시대를 초월한 명작<br>
+                            독점 공개하는 새로운 오리지널 영화와 시리즈<br> 
+                            흥미진진한 스페셜과 기간 한정 스트리밍되는 특별 콘텐츠<br>
+                            그때 그 시절 추억의 작품과 인기 시리즈의 지난 시즌 에피소드<br>
+
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <button class="button">
+                        <h2>Q. 웨이브를 어디에서 시청할 수 있나요?</h2><img src="img/icon-arrow-down.svg" alt="화살표 표시">
+                    </button>
+                    <div class="content">
+                        <p>
+                            웨이브 앱은 모바일 기기, 웹 브라우저, 게임 콘솔, 셋톱박스, 스마트 TV에서 이용할 수 있습니다. 지원되는 기기의 전체 목록을 보려면 <span>여기를
+                                클릭</span>하세요.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <button class="button">
+                        <h2>Q. 웨이브를 얼마에 이용할 수 있나요?</h2><img src="img/icon-arrow-down.svg" alt="화살표 표시">
+                    </button>
+                    <div class="content">
+                        <p>
+                            웨이브 베이직(부가세 포함): 월 ₩7,900 / 연 ₩79,000<br>
+                            웨이브 스탠다드(부가세 포함): 월 ₩10,900 / 연 ₩109,000<br>
+                            웨이브 프리미엄(부가세 포함): 월 ₩13,900 / 연 ₩139,000<br>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <script>
+
+        const buttons = document.querySelectorAll('.button');
+
+        buttons.forEach(function (button, index) {
+            button.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                this.parentNode.classList.toggle('on');
+
+                buttons.forEach(function (button2, index2) {
+                    if (index !== index2) {
+                        button2.parentNode.classList.remove('on');
+                    }
+                });
+            });
+        });        
+
+    </script>
+
+</body>
+
+</html>

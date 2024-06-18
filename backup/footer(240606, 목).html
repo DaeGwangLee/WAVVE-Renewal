@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/interaction.css">
+    <link rel="stylesheet" href="css/responsive.css"> -->
+
+    <style>
+        body {
+            background-color: black;
+        }
+
+
+        #footer {
+            padding: 50px 16px 16px 16px;
+
+            .footer-container {
+                max-width: 1249px;
+                height: fit-content;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                .footer-logo {
+                    width: 100%;
+
+                    .footer-logo-container {
+                        width: 25%;
+                        margin: 0 auto;
+                        /* padding-bottom: 16px; */
+
+                        a {
+
+                            img {
+                                width: 100%;                                
+                            }
+                        }
+                    }
+                }
+
+                .footer-util {
+                    width: 100%;
+                    padding: 16px 0;
+
+                    .footer-util-container {
+                        padding: 26px 0;
+                        border-top: 1px solid rgb(33, 33, 33, 33);
+                        border-bottom: 1px solid rgb(33, 33, 33, 33);
+                        list-style: none;
+                        display: flex;
+                        justify-content: space-between;
+                        align-content: center;
+
+                        li {
+                            a {
+                                color: #a3a3a3;
+                                font-weight: bold;
+                                font-size: 20px;
+                                /* font-size: 1rem; */
+                                text-decoration: none;
+
+                                &:hover {
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .footer-info-and-social {
+                    /* width: 100%;                     */
+                    display: grid;
+                    grid-template-columns: 8fr 2fr;
+                    gap: 16px;
+                    /* border: 1px solid red;
+                    box-sizing: border-box; */
+
+                    .footer-info {
+                        .footer-info-container {
+                            /* width: 100%; */
+
+                            p {
+                                color: #6e6e6e;
+                                font-size: 16px;
+                                /* font-size: 1.2em; */
+                                font-weight: bold;
+                                line-height: 32px;
+
+                                a {
+                                    color: #6e6e6e;
+                                }
+
+                                span {
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                    }
+
+                    .footer-social {
+                        .footer-social-container {
+                            width: 100%;
+                            display: grid;
+                            grid-template-columns: 1fr 1fr 1fr 1fr;
+                            gap: 16px;
+
+                            a {
+                                img {
+                                    width: 100%;
+                                    padding-left: 4px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        /* @media screen and (max-width:1249px) {
+            #footer {
+                background-color: purple;
+            }
+        } */
+
+
+        @media screen and (max-width:768px) {
+
+            #footer {
+                .footer-container {
+
+                    .footer-logo {
+                        .footer-logo-container {
+                            width: 35%;
+                            /* img {} */
+                        }
+                    }
+
+                    .footer-util {
+                        .footer-util-container {
+                            padding: 8px 0;
+                            li {
+                                a {
+                                    font-size: 11px;
+                                }
+                            }
+                        }
+                    }
+
+                    .footer-info-and-social {
+                        display: flex;                        
+                        flex-direction: column;
+                        /* justify-content: flex-start; */
+                        align-items: center;
+                        width: 100%;
+                        
+                        .footer-info {
+                            width: 100%;
+
+                            .footer-info-container {
+                                /* margin-left: -10px; */
+
+                                p {
+                                    width: 100%;
+                                    font-size: 9px;
+                                    line-height: 18px;
+
+
+                                    span {
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .footer-social {
+                            width: 100%;
+
+                            .footer-social-container {
+                                max-width: 200px;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <footer id="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-logo">
+                <div class="footer-logo-container">
+                    <a href="#">
+                        <img src="img/wavve-logo-white.svg" alt="웨이브 로고">
+                    </a>
+                </div>
+            </div>
+
+            <nav class="footer-util">
+                <ul class="footer-util-container">
+                    <li><a href="">고객센터</a></li>
+                    <li><a href="">이용약관</a></li>
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li><a href="">청소년 보호정책</a></li>
+                    <li><a href="">법적고지</a></li>
+                    <li><a href="">이벤트</a></li>
+                    <li><a href="">인재채용</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer-info-and-social">
+                <div class="footer-info">
+                    <div class="footer-info-container">
+                        <p>
+                            콘텐츠웨이브 주식회사 | 대표이사: 이태현 | <a href="">사업자정보확인</a> | 사업자등록번호:220-88-38020 | <br>
+                            통신판매신고번호: 2021-서울영등포-0585호 | 사업장: 서울특별시 영등포구 여의나루로 60 | <br>
+                            호스팅서비스제공자: 마이크로소프트 유한회사, 구글클라우드코리아 유한회사, 아마존웹서비시즈코리아 유한회사 <br>
+                            고객센터(평일 09:00~18:00 / 점심시간 12:00~13:00 / 주말 및 공휴일 휴무) | <a href="">1:1 게시판 문의</a> | <br>
+                            대표메일: <a href="">helpdesk@wavve.com</a> | 전화번호: 1599-3709<br><br>
+                        </p>
+
+                        <p>
+                            <span>Copyright© 콘텐츠웨이브(주) All rights reserved.</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="footer-social">
+                    <div class="footer-social-container">
+                        <a href=""><img src="img/social-yt.png" alt=""></a>
+                        <a href=""><img src="img/social-fb.png" alt=""></a>
+                        <a href=""><img src="img/social-ig.png" alt=""></a>
+                        <a href=""><img src="img/social-tw.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

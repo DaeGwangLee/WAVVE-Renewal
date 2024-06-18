@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+
+  <style>
+    .editor-recommand-slider-container {
+      margin: 0 auto;
+      /* border: 1px solid red; */
+      width: 1249px;
+      height: 500px;
+      box-shadow: none;
+      position: relative;
+
+
+
+      .editor-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .label {
+          font-size: 24px;
+          color: #fff;
+          font-weight: bold;
+        }
+
+        .btn-more {
+          text-decoration: none;
+          font-size: 16px;
+          color: #a5a5a5;
+        }
+      }
+
+      /* .bx-wrapper .bx-controls-direction a.disabled {
+        display: block;
+      } */
+
+      .bx-wrapper {
+        border: none;
+        box-shadow: none;
+        background-color: transparent;
+
+        li {
+          width: 240px;
+          height: 360px;
+          border-radius: 4px;
+
+          img {
+            width: 240px;
+            height: 360px;
+            border-radius: 4px;
+          }
+        }
+      }
+
+      .bx-pager {
+        display: none;
+        box-shadow: none;
+      }
+    }
+
+    .bx-controls-direction {
+      max-width: 200px;
+      border-radius: 1px solid red;
+      height: 100px;
+      background-color: red;
+      margin: 10px;
+    }
+
+
+    .editor-recommand-slider-container {
+      .bx-wrapper.mobile a.bx-next.mobile {
+        /* display: none; */
+        bottom: 20px;
+        background-color: red;
+
+      }
+    }
+
+
+
+    /* @media screen and (max-width:1100px) {} */
+    /* @media screen and (max-width:500px) {} */
+
+    @media screen and (max-width:1315px) {
+      .bx-wrapper {
+        object-fit: cover;
+      }
+
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <section id="editor-recommand">
+    <div class="editor-recommand-slider-container">
+      <div class="editor-title">
+        <span class="label">믿고 보는 웨이브 에디터 추천작</span><a href="" class="btn-more">더보기 ></a>
+      </div>
+      <ul class="editor-bxslider">
+        <!-- <li><img src="http://placehold.it/170x200&text=FooBar1" /></li>
+        <li><img src="http://placehold.it/170x200&text=FooBar2" /></li>
+        <li><img src="http://placehold.it/170x200&text=FooBar3" /></li>
+        <li><img src="http://placehold.it/170x200&text=FooBar4" /></li>
+        <li><img src="http://placehold.it/170x200&text=FooBar5" /></li>
+        <li><img src="http://placehold.it/170x200&text=FooBar6" /></li>
+        <li><img src="http://placehold.it/170x200&text=FooBar7" /></li>
+        <li><img src="http://placehold.it/170x200&text=FooBar8" /></li> -->
+
+        <li><img src="img/image 103.png" /></li>
+        <li><img src="img/image 104.png" /></li>
+        <li><img src="img/image 105.png" /></li>
+        <li><img src="img/image 106.png" /></li>
+        <li><img src="img/image 99.png" /></li>
+        <li><img src="img/오펜하이머(세로).webp" /></li>
+        <li><img src="img/대군사 사마의(세로).webp" /></li>
+        <li><img src="img/대군사 사마의(세로)3.webp" /></li>
+
+      </ul>
+
+    </div>
+
+    <div class="bx-wrapper mobile">
+
+      <a href="" class="bx-next moble"></a>
+
+    </div>
+
+    <script>
+
+      $('.editor-bxslider').bxSlider({
+        minSlides: 5,
+        maxSlides: 5,
+        slideWidth: 300,
+        slideMargin: 12,
+        moveSlides: 1
+      });
+
+    </script>
+  </section>
+
+</html>

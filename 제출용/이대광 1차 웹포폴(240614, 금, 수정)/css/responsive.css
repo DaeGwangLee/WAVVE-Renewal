@@ -1,0 +1,478 @@
+/* header start --------------------------------------------------------------------------------*/
+
+@media screen and (max-width:500px) {
+  header .description {
+    display: none;
+  }
+}
+
+/* header end --------------------------------------------------------------------------------*/
+/* main-slider start --------------------------------------------------------------------------------*/
+
+/* @media screen and (max-width:1100px) {} */
+
+@media screen and (max-width:800px) {  
+
+  #main-slider {
+    & .bx-wrapper {
+      height: fit-content;
+
+      & li {
+        a {
+          img.desktop {
+            display: none;
+          }
+          img.tablet {            
+            display: block;            
+            object-fit: contain;
+            height: fit-content
+          }
+        }
+      }
+    }
+
+    #bx-pager {
+      width: 100%;
+      height: 25%;      
+      bottom: 0px;
+      box-sizing: border-box;
+      background: linear-gradient(transparent 10%, #040713 40%);
+    }
+
+    #bx-pager a {
+      width: 20px;
+      height: 20px;
+      background-color: gray;
+      border-radius: 10px;
+      margin: 0 16px;
+    }
+
+    #bx-pager a:hover {
+      background-color: white;
+    }
+
+    #bx-pager img {
+      display: none;
+    }
+  }
+}
+
+/* main-slider end --------------------------------------------------------------------------------*/
+/* merit start --------------------------------------------------------------------------------*/
+
+@media screen and (max-width:1100px) {
+  .wavve-merit-container>ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .wavve-merit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+  }
+
+  .wavve-merit::after {
+    height: 1px;
+    width: 100%;
+    top: 100%;
+    transform: none;
+  }
+
+  .wavve-merit:nth-child(3)::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width:500px) {
+
+  .wavve-merit-container>ul {
+    display: block;
+  }
+
+  .wavve-merit {
+    margin: 0;
+  }
+
+  .wavve-merit:nth-child(3)::after {
+    display: block;
+  }
+}
+
+/* merit end --------------------------------------------------------------------------------*/
+/* membership start --------------------------------------------------------------------------------*/
+
+@media screen and (max-width:1100px) {
+
+  #membership-table {
+    & .membership-container {
+      & .membership-table-container {
+        & .table-row {
+          height: fit-content;
+          grid-template-rows: 1fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr;
+
+          .table-column.membership-monthly.blank {
+            display: none;
+          }
+
+          .table-column.item {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 4;
+          }
+
+          .table-column:nth-of-type(2) {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 2;
+          }
+
+          .table-column:nth-of-type(3) {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3;
+          }
+
+          .table-column.premium {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            background-color: transparent;
+          }
+
+          .table-column.membership-monthly.premium.desktop {
+            background-color: #1d1f2b;
+          }
+        }
+
+        .table-row.membership-monthly {
+          grid-template-rows: 1fr;
+        }
+
+        .table-row.membership-yearly {
+          grid-template-rows: 54px 1fr;
+
+          .table-column.item {
+            height: fit-content;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* @media screen and (max-width:430px) {} */
+/* @media screen and (max-width:483px) {} */
+/* @media screen and (max-width:500px) {} */
+
+@media screen and (max-width:768px) {
+
+  #membership-table {
+    & .membership-container {
+      .table-title-container {
+        h1 {
+          font-size: 20px;
+        }
+
+        p {
+          font-size: 10px;
+        }
+      }
+
+      & .membership-table-container {
+        & .table-row {
+          grid-template-rows: 1fr 1fr;
+          grid-template-columns: 1fr 1fr;
+
+          .table-column.item {
+            grid-column-start: 1;
+            grid-column-end: 3;
+          }
+
+          .table-column {
+            h5 {
+              font-size: 16px;
+            }
+
+            p {
+              font-size: 13px;
+            }
+          }
+
+          .table-column.premium.desktop {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .premium-membership-container.mobile {
+      display: block;
+    }
+  }
+}
+
+/* membership end --------------------------------------------------------------------------------*/
+/* faq start --------------------------------------------------------------------------------*/
+
+/* @media screen and (max-width:483px) {} */
+/* @media screen and (max-width:430px) {} */
+
+@media screen and (max-width:430px) {
+  #faq {
+    h2 {
+      font-size: 12px;
+    }
+    p {
+      font-size: 11px;
+    }
+  }
+}
+
+/* faq end --------------------------------------------------------------------------------*/
+/* footer start --------------------------------------------------------------------------------*/
+
+@media screen and (max-width:1024px) {
+  #footer {
+    .footer-container {
+      .footer-info-and-social {
+        .footer-info {
+          .footer-info-container {
+            p {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* @media screen and (max-width:430px) {} */
+/* @media screen and (max-width:483px) {} */
+/* @media screen and (max-width:860px) {} */
+/* @media screen and (max-width:768px) {} */
+/* @media screen and (max-width:500px) {} */
+
+@media screen and (max-width:500px) {
+
+  #footer {
+    .footer-container {
+
+      .footer-logo {
+        .footer-logo-container {
+          width: 35%;          
+        }
+      }
+
+      .footer-util {
+        .footer-util-container {
+          padding: 8px 0;
+
+          li {
+            a {
+              font-size: 8px;
+            }
+          }
+        }
+      }
+
+      .footer-info-and-social {
+        display: flex;
+        flex-direction: column;        
+        align-items: center;
+        width: 100%;
+
+        .footer-info {
+          width: 100%;
+
+          .footer-info-container {
+
+            p {
+              width: 100%;
+              font-size: 6px;
+              line-height: 150%;
+
+              span {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+
+        .footer-social {
+          width: 100%;
+
+          .footer-social-container {
+            max-width: 200px;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* footer end --------------------------------------------------------------------------------*/
+/* common start -------------------------------------------------------------------------------- */
+
+@media screen and (max-width:1249px) {
+  #daily-recommand,
+  #monthly-recommand,
+  #summer-recommand,
+  #drama-recommand {
+    .daily-recommand-container,
+    .monthly-recommand-container,
+    .summer-recommand-container,
+    .drama-recommand-container {
+      .content-intro-container.gladiator,
+      .content-intro-container.op-chromite,
+      .content-intro-container.aquaman,
+      .content-intro-container.mr-sunshine {
+        justify-content: flex-end;
+        padding-bottom: 500px;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        div {          
+          h2,
+          p {
+            text-align: center;
+            font-size: 16px;
+          }
+
+          .intro-title {
+            font-size: 50px;
+            padding-top: 16px;
+          }
+
+          .content-info {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    .daily-recommand-slider-container,
+    .monthly-recommand-slider-container,
+    .summer-recommand-slider-container,
+    .drama-recommand-slider-container {
+      bottom: 0;
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width:768px) {
+
+  #daily-recommand {
+    background-image: url('../img/태블릿 - 메인 - 글래디에이터.jpg');    
+  }
+  #monthly-recommand {
+    background-image: url('../img/태블릿 - 메인 - 인천상륙작전.jpg');    
+  }
+  #summer-recommand {
+    background-image: url('../img/태블릿 - 메인 - 아쿠아맨.jpg');    
+  }
+  #drama-recommand {
+    background-image: url('../img/태블릿 - 메인 - 미스터 션샤인.jpg');    
+  }
+
+  #daily-recommand,
+  #monthly-recommand,
+  #summer-recommand,
+  #drama-recommand {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    background-size: contain;
+
+    .bx-wrapper {
+      margin: 0;
+      bottom: 0;
+    }
+  }
+
+  .daily-recommand-slider-container,
+  .monthly-recommand-slider-container,
+  .summer-recommand-slider-container,
+  .drama-recommand-slider-container {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    background: linear-gradient(transparent 10%, #040713 20%);
+    height: 52%;
+    bottom: 0;
+  }  
+}
+
+@media screen and (max-width:430px) {
+  #editor-recommand,
+  #daily-recommand,
+  #monthly-recommand,
+  #summer-recommand,
+  #drama-recommand {
+    .editor-title,
+    .daily-title,
+    .monthly-title,
+    .summer-title,
+    .drama-title {
+      .label {        
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+/* common end -------------------------------------------------------------------------------- */
+/* fixed start -------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:800px) {
+
+  .fixed {
+    .fixed-tab {
+      width: 60px;
+      height: 50px;
+
+      .fixed-tab-inner {
+        h3 {
+          font-size: 16px;
+        }
+
+        p {
+          font-size: 8px;
+        }
+      }
+    }
+
+    & .sidebar {
+      width: 100%;
+
+      & .sidebar-container {
+        & div {
+          h1 {
+            font-size: 30px;
+          }
+
+          p {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* fixed start -------------------------------------------------------------------------------------- */

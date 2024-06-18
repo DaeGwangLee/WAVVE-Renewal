@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+
+    <style type="text/css">
+        body {
+            background-color: black;
+        }
+
+        /* 여기서부터 복사 */
+
+        #main-slider {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            /* bx-silder -------------------------------------------------------------------*/
+
+            .bx-wrapper {
+                box-shadow: none;
+                border: none;
+
+                img {
+                    width: 100%;
+                    height: 960px;
+                }
+            }
+
+            /* #bx-pager -------------------------------------------------------------------*/
+
+            #bx-pager {
+                z-index: 999;
+                position: absolute;
+                bottom: 100px;
+                /* text-align: center; */
+                /* margin-top: -30px; */
+                /* margin-top: -200px; */
+                /* bottom: 0px; */
+                /* float: center; */
+            }
+
+            #bx-pager a {
+                margin: 0 3px;
+                width: 150px;
+                /* object-fit: cover; */
+            }
+
+            #bx-pager a img {
+                /* padding: 3px; */
+                /* border: solid #ccc 1px */
+                box-sizing: border-box;
+                object-fit: cover;
+                width: 150px;
+                height: 100%;
+            }
+
+            #bx-pager a.active img {
+                box-sizing: border-box;
+                border: solid #5280DD 2px;
+                border-radius: 4px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <section id="main-slider">
+
+        <ul class="bxslider">
+
+            <li><img src="img/mainslide-aquaman.png" /></li>
+            <li><img src="img/mainslide-gladiator.png" /></li>
+            <li><img src="img/mainslide-hansan.png" /></li>
+            <li><img src="img/mainslide-mr.sunshine.png" /></li>
+            <li><img src="img/mainslide-인천상륙작전.png" /></li>
+        </ul>
+
+        <div id="bx-pager">
+            <a data-slide-index="0" href=""><img src="img/mainslide-aquaman.png" /></a>
+            <a data-slide-index="1" href=""><img src="img/mainslide-gladiator.png" /></a>
+            <a data-slide-index="2" href=""><img src="img/mainslide-hansan.png" /></a>
+            <a data-slide-index="3" href=""><img src="img/mainslide-mr.sunshine.png" /></a>
+            <a data-slide-index="4" href=""><img src="img/mainslide-인천상륙작전.png" /></a>
+
+            <!-- <a data-slide-index="2" href=""><img src="http://placehold.it/73x73&text=3" /></a> -->
+        </div>
+
+    </section>
+
+    <script>
+
+        $('.bxslider').bxSlider({
+            pagerCustom: '#bx-pager'
+        });
+
+
+
+    </script>
+
+</body>
+
+</html>

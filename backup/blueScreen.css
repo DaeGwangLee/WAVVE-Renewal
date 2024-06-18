@@ -1,0 +1,153 @@
+/* 공통 */
+
+
+main,
+#editor-recommand,
+#value-banner,
+#membership-plan,
+#daily-recommand,
+#monthly-recommand,
+#season-recommand,
+#heartbeat-comingsoon,
+#drama-recommand,
+footer {
+    height: 100px;
+    width: auto;    
+    
+    
+}
+
+
+main,
+#editor-recommand,
+#value-banner,
+#membership-plan,
+#daily-recommand,
+#monthly-recommand,
+#season-recommand,
+#heartbeat-comingsoon,
+#drama-recommand,
+footer::before {
+    content: '';
+    font-size: 50px;
+}
+
+/* <!-- 헤더 시작 -----------------------------------------------------------------> */
+
+
+
+
+
+/* <!-- 헤더 끝 -----------------------------------------------------------------> */
+/* <!-- 메인 시작 -----------------------------------------------------------------> */
+
+main {
+    height: 786.33px;
+    background-color: yellow;    
+}
+main::before {
+    content: '메인';
+}
+
+/* <!-- 메인 끝 -----------------------------------------------------------------> */
+/* <!-- 섹션: 믿고 보는 웨이브 에디터 추천작 -----------------------------------------------------------------> */
+
+#editor-recommad {
+    height: 498px;
+    background-color: skyblue;    
+}
+
+#editor-recommad::before {
+    content: '에디터추천작';
+}
+
+/* <!-- 섹션: 웨이브의 장점 -----------------------------------------------------------------> */
+
+
+#value-banner {
+    height: 315.81px;
+    background-color: yellow;    
+}
+#value-banner::before {
+    content: '웨이브의 장점';
+}
+
+/* /* <!-- 섹션: 웨이브 요금제 -----------------------------------------------------------------> */
+
+#membership-plan {
+    height: 1193.38px;
+    background-color: skyblue;    
+}
+#membership-plan::before {
+    content: '웨이브요금제';
+}
+
+/* <!-- 섹션: 일일추천 -----------------------------------------------------------------> */
+
+#daily-recommand {
+    height: 498px;
+    background-color: yellow;    
+}
+
+#daily-recommand::before {
+    content: '일일추천';
+}
+
+/* <!-- 섹션: 월간 추천 -----------------------------------------------------------------> */
+
+#monthly-recommand {
+    height: 498px;
+    background-color: skyblue;    
+}
+#monthly-recommand::before {
+    content: '월간추천';
+}
+
+/* <!-- 섹션: 계절 추천 -----------------------------------------------------------------> */
+
+#season-recommand {
+    height: 498px;
+    background-color: yellow;    
+}
+#season-recommand::before {
+    content: '계절추천';
+}
+
+
+
+/* <!-- 섹션: 두근두근 커밍순 -----------------------------------------------------------------> */
+
+#heartbeat-comingsoon {
+    height: 421px;
+    background-color: skyblue;    
+}
+#heartbeat-comingsoon::before {
+    content: '두근두근커밍순';
+}
+
+
+
+/* <!-- 섹션: 드라마 추천 -----------------------------------------------------------------> */
+
+#drama-recommand {
+    height: 498px;
+    background-color: yellow;    
+}
+#drama-recommand::before {
+    content: '드라마추천';
+}
+
+
+
+/* <!-- 푸터 -----------------------------------------------------------------> */
+
+footer {
+    height: 193.38px;
+    background-color: skyblue;    
+}
+footer::before {
+    content: '푸터';
+}
+
+
+/* <!-- 쿠팡플레이 참고 --> */

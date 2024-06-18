@@ -1,0 +1,189 @@
+/* header start ----------------------------------------- */
+
+header.scrolled-background {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.header-container {
+    .join:hover {
+        background-color: #006eb3;
+    }
+
+    .log-in:hover {
+        border: 2px solid #555;
+    }
+}
+
+/* header end ----------------------------------------- */
+/* main start ----------------------------------------- */
+
+#main-slider {
+    .main-info-tablet {
+        animation: fade-in 1s linear;
+    }
+
+    #bx-pager a.active img {
+        box-sizing: border-box;
+        border: solid #fff 2px;
+        border-radius: 4px;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* main end ----------------------------------------- */
+/* membersip start ----------------------------------------- */
+
+#membership-table {
+    .membership-container {
+        .membership-table-container {
+            .table-row {
+                .table-column.membership-yearly {
+                    div:hover {
+                        background-color: white;
+
+                        p {
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    & .premium-membership-container.mobile {
+        & .table-row {
+            & .table-column.membership-yearly {
+                div:hover {
+                    background-color: white;
+                    p {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* membersip end ----------------------------------------- */
+/* faq start ----------------------------------------- */
+
+#faq {
+    li {
+        &.on {
+            .accordion-btn {
+                font-weight: bold;
+
+                img {
+                    transform: rotate(180deg);
+                }
+            }
+
+            .accordion-content {
+                display: block;
+            }
+        }
+    }
+}
+
+/* faq end ----------------------------------------- */
+/* footer start ----------------------------------------- */
+
+#footer {
+    .footer-container>.footer-util>.footer-util-container>li>a:hover {
+        color: #fff;
+    }
+}
+
+/* footer end ----------------------------------------- */
+/* common start ----------------------------------------- */
+
+#editor-recommand,
+#daily-recommand,
+#monthly-recommand,
+#summer-recommand,
+#drama-recommand,
+#heartbeat-comingsoon {
+
+    li:hover {
+        border: 2px solid #00a7f6;
+        box-sizing: border-box;
+
+        img {
+            transform: scale(1.1);
+        }
+    }
+}
+
+#daily-recommand,
+#monthly-recommand,
+#summer-recommand,
+#drama-recommand {
+    .content-intro-container.active {
+        opacity: 1;        
+
+        .intro-title {
+            background-clip: text;
+            color: transparent;
+            background-image: linear-gradient(135deg,
+                    #ffb6ff,
+                    #b344ff 10%,
+                    #ae38ff 33%,
+                    #ffb6ff 45%,
+                    #ffe3ff 50%,
+                    #ffb6ff 66%,
+                    #b344ff);
+            background-size: 300% 100%;
+            background-position-x: 0%;
+            animation: gradient 2s ease-in-out forwards;
+        }
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position-x: 100%;
+    }
+    100% {
+        background-position-x: 0%;        
+    }
+}
+
+/* common end ----------------------------------------- */
+/* fixed start ----------------------------------------- */
+
+.fixed {
+    .fixed-tab {
+        &.appear {
+            display: block;
+            left: 0px;
+        }
+
+        &.active {
+            opacity: 0;
+        }
+    }    
+
+    .sidebar {
+
+        &.active {
+            left: 0px;
+        }
+    }
+}
+
+.top-btn {
+    &:hover {
+        background-color: #fff;
+        color: #000;
+    }
+}
+
+/* fixed end ----------------------------------------- */

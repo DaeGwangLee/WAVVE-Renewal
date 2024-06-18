@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        body {
+            background-color: black;
+        }
+
+        /* 여기서부터 복사 ---------------------------------------------*/
+
+        #wavve-merit {
+            padding: 0 32px;
+            box-sizing: border-box;
+        }
+
+        .wavve-merit-container>ul {
+            margin: 0 auto;
+            max-width: 1240px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            /* gap: 50px */
+        }        
+
+        .wavve-merit {
+            text-align: center;
+            font-weight: bold;
+            padding: 0 16px;
+            margin: 16px 0;            
+            position: relative;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .wavve-merit::after {
+            background: #f9f9f9;
+            content: "";
+            display: block;
+            height: 80px;
+            right: 0;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1px;
+        }
+
+        .wavve-merit:last-child::after{
+            display: none;
+        }        
+
+        .wavve-merit>h3 {
+            font-size: 28px;
+            color: #f9f9f9;
+            margin-bottom: 24px;
+        }
+
+        .wavve-merit>p {
+            font-size: 16px;
+            color: #c0c0c0;
+        }
+
+        @media screen and (max-width:1100px) {
+            .wavve-merit-container>ul {
+                grid-template-columns: repeat(2,1fr);
+            }
+
+            .wavve-merit {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 200px;
+            }
+
+            .wavve-merit::after {
+                height: 1px;
+                width: 100%;
+                top: 100%;
+                /* left: -25%; */
+                transform: none;
+            }
+
+            .wavve-merit:nth-child(3)::after{
+                display: none;
+            }
+        }
+
+        @media screen and (max-width:500px) {
+
+            .wavve-merit-container>ul {
+                display: block;
+            }
+
+            .wavve-merit {
+                margin: 0;
+            }
+
+            .wavve-merit:nth-child(3)::after{
+                display: block;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <section id="wavve-merit">
+
+        <div class="wavve-merit-container">
+
+            <ul>
+
+                <li class="wavve-merit">
+                    <h3>
+                        국내 모든 컨텐츠
+                    </h3>
+                    <p>
+                        국내 드라마, 영화, 예능을<br>
+                        모두 즐겨보세요.
+                    </p>
+                </li>
+
+                <li class="wavve-merit">
+                    <h3>
+                        첫달은 100원!!!
+                    </h3>
+                    <p>
+                        첫달은 100원만 내시고,<br>
+                        한달 후에 다시 결정하세요.
+                    </p>
+                </li>
+
+                <li class="wavve-merit">
+                    <h3>
+                        드라마 정주행
+                    </h3>
+                    <p>
+                        드라마 정주행은 웨이브에서!<br>
+                        배속기능으로 시간을 아끼세요.
+                    </p>
+                </li>
+
+                <li class="wavve-merit">
+                    <h3>
+                        4명 동시접속
+                    </h3>
+                    <p>
+                        프리미엄 요금제로<br>
+                        가족과 함께 즐기세요.
+                    </p>
+                </li>
+
+            </ul>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
