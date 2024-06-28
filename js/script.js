@@ -119,7 +119,7 @@ $('.drama-bxslider').bxSlider({
 $('.heartbeat-bxslider').bxSlider({
     minSlides: 0,
     maxSlides: 5,
-    slideWidth: 406.66,    
+    slideWidth: 406.66,
     slideMargin: 10.01,
     moveSlides: 1
 });
@@ -206,20 +206,24 @@ window.addEventListener('scroll', () => {
     if (sidebar.getBoundingClientRect.left >= 0) {
         header.classList.remove('scrolled-background');
     }
-
 });
 
 
 const topBtn = document.querySelector(".top-btn");
-
 
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         topBtn.style.display = "block";
+
+        promotion.style.opacity = "1";
+
     } else {
         topBtn.style.display = "none";
+
+        promotion.style.opacity = "0";
+
     }
 }
 
@@ -228,5 +232,20 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+
+
+
+
+const promotion = document.querySelector('.promotion');
+
+// window.addEventListener('scroll', () => {
+
+//     if (promotion.getBoundingClientRect().top < window.innerHeight) {
+//         promotion.classList.add('appear');
+//     } else {
+//         promotion.classList.remove('appear');
+//     }
+// });
 
 // fixed end -------------------------------------------------------------

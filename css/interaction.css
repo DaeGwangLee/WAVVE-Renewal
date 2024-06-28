@@ -33,6 +33,7 @@ header.scrolled-background {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -63,6 +64,7 @@ header.scrolled-background {
             & .table-column.membership-yearly {
                 div:hover {
                     background-color: white;
+
                     p {
                         color: black;
                     }
@@ -127,7 +129,7 @@ header.scrolled-background {
 #summer-recommand,
 #drama-recommand {
     .content-intro-container.active {
-        opacity: 1;        
+        opacity: 1;
 
         .intro-title {
             background-clip: text;
@@ -151,8 +153,9 @@ header.scrolled-background {
     0% {
         background-position-x: 100%;
     }
+
     100% {
-        background-position-x: 0%;        
+        background-position-x: 0%;
     }
 }
 
@@ -169,7 +172,7 @@ header.scrolled-background {
         &.active {
             opacity: 0;
         }
-    }    
+    }
 
     .sidebar {
 
@@ -184,6 +187,10 @@ header.scrolled-background {
         background-color: #fff;
         color: #000;
     }
+}
+
+.promotion.appear {
+    opacity: 1;
 }
 
 /* fixed end ----------------------------------------- */
