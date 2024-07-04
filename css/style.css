@@ -1,0 +1,1489 @@
+@charset "UTF-8";
+/* total -----------------------------------------------------------*/
+:root {
+  --color-wavve-blue: #00a7f6;
+  --color-wavve-black: #040713;
+  --color-wavve-transparent-black: rgba(0, 0, 0, 0.8);
+}
+
+body {
+  background-color: var(--color-wavve-black);
+  font-size: 16px;
+}
+
+.bx-wrapper .bx-controls-direction a {
+  z-index: 700;
+}
+
+@font-face {
+  font-family: "Ownglyph_JAEGEONSA-Rg";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/Ownglyph_JAEGEONSA-Rg.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Danjo-bold-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Danjo-bold-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SBAggroB";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "S-CoreDream-3Light";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* header start ------------------------------------------------------------*/
+header {
+  height: 62px;
+  width: 100%;
+  padding: 0 36px;
+  position: fixed;
+  top: 0;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, #000, transparent);
+  z-index: 999;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+
+.header-logo {
+  width: 120px;
+}
+
+.header-container > nav {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.description {
+  width: 197.06px;
+  height: 26px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 4px;
+  position: relative;
+}
+
+.description::after {
+  display: inline-block;
+  content: "";
+  background: transparent;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 6px solid rgba(255, 255, 255, 0.25);
+  right: -6px;
+}
+
+.join {
+  width: 68.41px;
+  height: 32.09px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: var(--color-wavve-blue);
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.log-in {
+  width: 74.31px;
+  height: 32.09px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* @media screen and (max-width:1100px) {} */
+/* @media screen and (max-width:500px) {} */
+/* header end ------------------------------------------------------------*/
+/* main-slider start --------------------------------------------------------- */
+#main-slider .bx-wrapper li a img.desktop {
+  display: block;
+  object-fit: cover;
+}
+#main-slider .bx-wrapper li a img.tablet {
+  display: none;
+}
+#main-slider .bx-wrapper li a img.desktop.hansan {
+  object-position: 87.5% 0%;
+}
+#main-slider .bx-wrapper li a img.desktop.aquaman {
+  object-position: 47.5% 0%;
+}
+#main-slider .bx-wrapper li a img.desktop.gladiator {
+  object-position: 50% 0%;
+}
+#main-slider .bx-wrapper li a img.desktop.mr-sunshine {
+  object-position: 80% 0%;
+}
+#main-slider .bx-wrapper li a img.desktop.op-chromite {
+  object-position: 0% 0%;
+}
+
+/* #main-slider  */
+/* main info ----------------*/
+.open-main-info-desktop {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  padding: 32px;
+  top: 34%;
+  left: 56px;
+  background: rgba(0, 0, 0, 0.9);
+  cursor: pointer;
+  border-radius: 4px;
+}
+.open-main-info-desktop h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+}
+.open-main-info-desktop p {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: gray;
+  margin-bottom: 32px;
+}
+.open-main-info-desktop button {
+  width: 327px;
+  height: 60px;
+  background-color: var(--color-wavve-blue);
+  border-radius: 4px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.main-info-tablet {
+  width: 100%;
+  height: fit-content;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 32px;
+  padding-bottom: 280px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  box-sizing: border-box;
+  display: none;
+}
+.main-info-tablet .main-info-tablet-container {
+  height: fit-content;
+  text-align: center;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+.main-info-tablet .main-info-tablet-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.main-info-tablet .main-info-tablet-container h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+.main-info-tablet .main-info-tablet-container p {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: gray;
+}
+.main-info-tablet .main-info-tablet-container button {
+  width: 385px;
+  height: 60px;
+  background-color: var(--color-wavve-blue);
+  border-radius: 4px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  display: block;
+}
+.main-info-tablet .main-info-tablet-container h2 {
+  font-size: 32px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* main-slider ------------------------ */
+#main-slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* bx-silder -------------------------------------------------------------------*/
+  /* #bx-pager -------------------------------------------------------------------*/
+}
+#main-slider .bx-wrapper {
+  box-shadow: none;
+  border: none;
+}
+#main-slider .bx-wrapper li a img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+#main-slider #bx-pager {
+  z-index: 500;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  box-sizing: border-box;
+  background: linear-gradient(transparent 10%, #040713 40%);
+}
+#main-slider #bx-pager a {
+  margin: 0 3px;
+  width: 150px;
+  height: 75px;
+}
+#main-slider #bx-pager a img {
+  box-sizing: border-box;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* main-slider end --------------------------------------------------------- */
+/* editor-slider start ----------------------------------------------------------*/
+#editor-recommand {
+  padding: 50px 0;
+}
+
+.editor-recommand-slider-container {
+  margin: 0 auto;
+  max-width: 1240px;
+  height: fit-content;
+  box-shadow: none;
+  padding: 10px;
+}
+.editor-recommand-slider-container .editor-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.editor-recommand-slider-container .editor-title .label {
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+}
+.editor-recommand-slider-container .editor-title .btn-more {
+  text-decoration: none;
+  font-size: 16px;
+  color: #a5a5a5;
+}
+.editor-recommand-slider-container .bx-wrapper {
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+.editor-recommand-slider-container .bx-wrapper li {
+  width: 240px;
+  height: 360px;
+  border-radius: 4px;
+}
+.editor-recommand-slider-container .bx-wrapper li a img {
+  width: 240px;
+  height: 360px;
+  border-radius: 4px;
+}
+.editor-recommand-slider-container .bx-pager {
+  display: none;
+  box-shadow: none;
+}
+
+/* @media screen and (max-width:1100px) {} */
+/* @media screen and (max-width:500px) {} */
+/* editor-slider end ----------------------------------------------------------*/
+/* merit start ----------------------------------------------------------*/
+#wavve-merit {
+  padding: 50px 32px;
+  box-sizing: border-box;
+}
+
+.wavve-merit-container > ul {
+  margin: 0 auto;
+  max-width: 1240px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.wavve-merit {
+  text-align: center;
+  font-weight: bold;
+  padding: 0 16px;
+  margin: 16px 0;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.wavve-merit::after {
+  background: #f9f9f9;
+  content: "";
+  display: block;
+  height: 80px;
+  right: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+}
+
+.wavve-merit:last-child::after {
+  display: none;
+}
+
+.wavve-merit > h3 {
+  font-size: 28px;
+  color: #f9f9f9;
+  margin-bottom: 24px;
+}
+
+.wavve-merit > p {
+  font-size: 16px;
+  color: #c0c0c0;
+}
+
+/* merit end ----------------------------------------------------------*/
+/* membership start ------------------------------------------------------------*/
+#membership-table {
+  padding: 50px 32px 100px 32px;
+}
+#membership-table .membership-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#membership-table .membership-container .table-title-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  box-sizing: border-box;
+}
+#membership-table .membership-container .table-title-container h1 {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  margin: 24px 0;
+}
+#membership-table .membership-container .table-title-container p {
+  font-size: 16px;
+  color: #c0c0c0;
+  font-weight: bold;
+}
+#membership-table .membership-container .membership-table-container {
+  display: grid;
+}
+#membership-table .membership-container .membership-table-container .table-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: none;
+  border-bottom: 1px solid gray;
+  box-sizing: border-box;
+}
+#membership-table .membership-container .membership-table-container .table-row .table-column {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  padding: 33px;
+  padding: 20px 12px;
+}
+#membership-table .membership-container .membership-table-container .table-row .table-column h5 {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+#membership-table .membership-container .membership-table-container .table-row .table-column p {
+  font-size: 14px;
+  color: #c0c0c0;
+  font-weight: bold;
+}
+#membership-table .membership-container .membership-table-container .table-row .table-column .column-badge {
+  width: 50px;
+  height: 25px;
+  background-color: white;
+  border-radius: 25px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  margin-top: -12.5px;
+}
+#membership-table .membership-container .membership-table-container .table-row .table-column .column-badge p {
+  color: #136878;
+  font-weight: bold;
+  font-size: 12px;
+}
+#membership-table .membership-container .membership-table-container .table-row .table-column.membership-monthly {
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+#membership-table .membership-container .membership-table-container .table-row .table-column.membership-monthly button {
+  width: 100%;
+  height: 50px;
+  background-color: #02d6e8;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+#membership-table .membership-container .membership-table-container .table-row .table-column.membership-monthly.blank {
+  border-top: none;
+}
+#membership-table .membership-container .membership-table-container .table-row .table-column.membership-yearly div {
+  border: 1px solid white;
+  width: 100%;
+  height: 50px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+  cursor: pointer;
+  font-size: 14px;
+}
+#membership-table .membership-container .membership-table-container .table-row .table-column:last-of-type {
+  background-color: #1d1f2b;
+}
+#membership-table .premium-membership-container.mobile {
+  padding-top: 25px;
+  margin: 0 auto;
+  max-width: 1000px;
+  display: grid;
+  display: none;
+}
+#membership-table .premium-membership-container.mobile .table-row.membership-yearly {
+  grid-template-rows: 54px 1fr;
+}
+#membership-table .premium-membership-container.mobile .table-row.membership-yearly .table-column.item {
+  height: fit-content;
+}
+#membership-table .premium-membership-container.mobile .table-row {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  border: none;
+  border-bottom: 1px solid gray;
+  box-sizing: border-box;
+}
+#membership-table .premium-membership-container.mobile .table-row .table-column.item {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+#membership-table .premium-membership-container.mobile .table-row .table-column.premium {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+#membership-table .premium-membership-container.mobile .table-row .table-column {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  padding: 33px;
+  padding: 20px 12px;
+  background-color: #1d1f2b;
+}
+#membership-table .premium-membership-container.mobile .table-row .table-column h5 {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+#membership-table .premium-membership-container.mobile .table-row .table-column p {
+  font-size: 14px;
+  color: #c0c0c0;
+  font-weight: bold;
+}
+#membership-table .premium-membership-container.mobile .table-row .table-column .column-badge {
+  width: 50px;
+  height: 25px;
+  background-color: white;
+  border-radius: 25px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  margin-top: -12.5px;
+}
+#membership-table .premium-membership-container.mobile .table-row .table-column .column-badge p {
+  color: #136878;
+  font-weight: bold;
+  font-size: 12px;
+}
+#membership-table .premium-membership-container.mobile .table-row .table-column.membership-monthly {
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+#membership-table .premium-membership-container.mobile .table-row .table-column.membership-monthly button {
+  width: 100%;
+  height: 50px;
+  background-color: #02d6e8;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+#membership-table .premium-membership-container.mobile .table-row .table-column.membership-yearly div {
+  border: 1px solid white;
+  width: 100%;
+  height: 50px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+  cursor: pointer;
+  font-size: 14px;
+}
+#membership-table .premium-membership-container.mobile .table-row.membership-monthly {
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+}
+
+/* @media screen and (max-width:1100px) {} */
+/* @media screen and (max-width:500px) {} */
+/* membership end ------------------------------------------------------------*/
+/* daily start ------------------------------------------------------------*/
+/* daily end ------------------------------------------------------------*/
+/* monthly start ------------------------------------------------------------*/
+/* monthly end ------------------------------------------------------------*/
+/* summer start ------------------------------------------------------------*/
+/* summer end ------------------------------------------------------------*/
+/* drama start ------------------------------------------------------------*/
+/* drama end ------------------------------------------------------------*/
+/* hearbeat-comingsoon start -------------------------------------------------- */
+#heartbeat-comingsoon {
+  padding: 100px 0 50px 0;
+}
+#heartbeat-comingsoon .heartbeat-comingsoon-slider-container {
+  height: fit-content;
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 1260px;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+#heartbeat-comingsoon .heartbeat-comingsoon-slider-container .heartbeat-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#heartbeat-comingsoon .heartbeat-comingsoon-slider-container .heartbeat-title .label {
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+}
+#heartbeat-comingsoon .heartbeat-comingsoon-slider-container .heartbeat-title .btn-more {
+  text-decoration: none;
+  font-size: 16px;
+  color: #a5a5a5;
+}
+#heartbeat-comingsoon .heartbeat-comingsoon-slider-container .bx-wrapper {
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+#heartbeat-comingsoon .heartbeat-comingsoon-slider-container .bx-wrapper li {
+  width: 406.66px;
+  height: 229px;
+  border-radius: 4px;
+}
+#heartbeat-comingsoon .heartbeat-comingsoon-slider-container .bx-wrapper li a img {
+  width: 406.66px;
+  height: 229px;
+  border-radius: 4px;
+}
+#heartbeat-comingsoon .heartbeat-comingsoon-slider-container .bx-pager {
+  display: none;
+  box-shadow: none;
+}
+
+/* hearbeat-comingsoon end -------------------------------------------------- */
+/* faq start ---------------------------------------------- */
+#faq {
+  padding: 50px 16px;
+}
+
+.faq-container {
+  margin: 0 auto;
+  max-width: 1240px;
+  text-align: center;
+}
+
+.faq-container > h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 21.44px 0px;
+}
+
+.faq-container ul {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.faq-container ul li:first-of-type > .accordion-btn {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+.faq-container ul li:last-of-type > .accordion-btn,
+.faq-container ul li:last-of-type > .accordion-content {
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+.faq-container ul li.on:last-of-type > .accordion-btn {
+  border-radius: 0px;
+}
+.faq-container ul li .accordion-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid gray;
+  cursor: pointer;
+  padding: 16px;
+}
+.faq-container ul li .accordion-btn h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.faq-container ul li .accordion-btn img {
+  width: 25px;
+  height: 25px;
+  transition: 0.5s;
+}
+.faq-container ul li .accordion-content {
+  display: none;
+  margin: 0;
+  background-color: transparent;
+  border: 1px solid gray;
+  padding: 16px;
+  text-align: left;
+}
+.faq-container ul li .accordion-content p {
+  line-height: 24px;
+  color: #fff;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+/* @media screen and (max-width:1100px) {} */
+/* @media screen and (max-width:500px) {} */
+/* faq end ---------------------------------------------- */
+/* footer start ---------------------------------------------- */
+#footer {
+  padding: 50px 16px 70px 16px;
+}
+#footer .footer-container {
+  max-width: 1249px;
+  height: fit-content;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#footer .footer-container .footer-logo {
+  width: 100%;
+}
+#footer .footer-container .footer-logo .footer-logo-container {
+  width: 25%;
+  margin: 0 auto;
+}
+#footer .footer-container .footer-logo .footer-logo-container a img {
+  width: 100%;
+}
+#footer .footer-container .footer-util {
+  width: 100%;
+  padding: 16px 0;
+}
+#footer .footer-container .footer-util .footer-util-container {
+  padding: 16px 0;
+  border-top: 1px solid #212121;
+  border-bottom: 1px solid #212121;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+#footer .footer-container .footer-util .footer-util-container li a {
+  color: #a3a3a3;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+}
+#footer .footer-container .footer-util .footer-util-container li a:hover {
+  color: #fff;
+}
+#footer .footer-container .footer-info-and-social {
+  display: grid;
+  grid-template-columns: 8fr 2fr;
+  gap: 16px;
+}
+#footer .footer-container .footer-info-and-social .footer-info .footer-info-container p {
+  color: #6e6e6e;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 150%;
+}
+#footer .footer-container .footer-info-and-social .footer-info .footer-info-container p a {
+  color: #6e6e6e;
+}
+#footer .footer-container .footer-info-and-social .footer-info .footer-info-container p span {
+  font-size: 16px;
+}
+#footer .footer-container .footer-info-and-social .footer-social .footer-social-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 16px;
+}
+#footer .footer-container .footer-info-and-social .footer-social .footer-social-container a img {
+  width: 100%;
+  padding-left: 4px;
+}
+
+/* @media screen and (max-width:1100px) {} */
+/* @media screen and (max-width:500px) {} */
+/* footer end ---------------------------------------------- */
+/* common start ------------------------------------------------------------*/
+#daily-recommand,
+#monthly-recommand,
+#summer-recommand,
+#drama-recommand {
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  object-fit: cover;
+  background-position: top;
+}
+#daily-recommand .daily-recommand-container,
+#daily-recommand .monthly-recommand-container,
+#daily-recommand .summer-recommand-container,
+#daily-recommand .drama-recommand-container,
+#monthly-recommand .daily-recommand-container,
+#monthly-recommand .monthly-recommand-container,
+#monthly-recommand .summer-recommand-container,
+#monthly-recommand .drama-recommand-container,
+#summer-recommand .daily-recommand-container,
+#summer-recommand .monthly-recommand-container,
+#summer-recommand .summer-recommand-container,
+#summer-recommand .drama-recommand-container,
+#drama-recommand .daily-recommand-container,
+#drama-recommand .monthly-recommand-container,
+#drama-recommand .summer-recommand-container,
+#drama-recommand .drama-recommand-container {
+  margin: 0 auto;
+  max-width: 1260px;
+  height: 993px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#daily-recommand .daily-recommand-container .content-intro-container.mr-sunshine,
+#daily-recommand .monthly-recommand-container .content-intro-container.mr-sunshine,
+#daily-recommand .summer-recommand-container .content-intro-container.mr-sunshine,
+#daily-recommand .drama-recommand-container .content-intro-container.mr-sunshine,
+#monthly-recommand .daily-recommand-container .content-intro-container.mr-sunshine,
+#monthly-recommand .monthly-recommand-container .content-intro-container.mr-sunshine,
+#monthly-recommand .summer-recommand-container .content-intro-container.mr-sunshine,
+#monthly-recommand .drama-recommand-container .content-intro-container.mr-sunshine,
+#summer-recommand .daily-recommand-container .content-intro-container.mr-sunshine,
+#summer-recommand .monthly-recommand-container .content-intro-container.mr-sunshine,
+#summer-recommand .summer-recommand-container .content-intro-container.mr-sunshine,
+#summer-recommand .drama-recommand-container .content-intro-container.mr-sunshine,
+#drama-recommand .daily-recommand-container .content-intro-container.mr-sunshine,
+#drama-recommand .monthly-recommand-container .content-intro-container.mr-sunshine,
+#drama-recommand .summer-recommand-container .content-intro-container.mr-sunshine,
+#drama-recommand .drama-recommand-container .content-intro-container.mr-sunshine {
+  left: 500px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+#daily-recommand .daily-recommand-container .content-intro-container.aquaman,
+#daily-recommand .monthly-recommand-container .content-intro-container.aquaman,
+#daily-recommand .summer-recommand-container .content-intro-container.aquaman,
+#daily-recommand .drama-recommand-container .content-intro-container.aquaman,
+#monthly-recommand .daily-recommand-container .content-intro-container.aquaman,
+#monthly-recommand .monthly-recommand-container .content-intro-container.aquaman,
+#monthly-recommand .summer-recommand-container .content-intro-container.aquaman,
+#monthly-recommand .drama-recommand-container .content-intro-container.aquaman,
+#summer-recommand .daily-recommand-container .content-intro-container.aquaman,
+#summer-recommand .monthly-recommand-container .content-intro-container.aquaman,
+#summer-recommand .summer-recommand-container .content-intro-container.aquaman,
+#summer-recommand .drama-recommand-container .content-intro-container.aquaman,
+#drama-recommand .daily-recommand-container .content-intro-container.aquaman,
+#drama-recommand .monthly-recommand-container .content-intro-container.aquaman,
+#drama-recommand .summer-recommand-container .content-intro-container.aquaman,
+#drama-recommand .drama-recommand-container .content-intro-container.aquaman {
+  left: 0px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+#daily-recommand .daily-recommand-container .content-intro-container,
+#daily-recommand .monthly-recommand-container .content-intro-container,
+#daily-recommand .summer-recommand-container .content-intro-container,
+#daily-recommand .drama-recommand-container .content-intro-container,
+#monthly-recommand .daily-recommand-container .content-intro-container,
+#monthly-recommand .monthly-recommand-container .content-intro-container,
+#monthly-recommand .summer-recommand-container .content-intro-container,
+#monthly-recommand .drama-recommand-container .content-intro-container,
+#summer-recommand .daily-recommand-container .content-intro-container,
+#summer-recommand .monthly-recommand-container .content-intro-container,
+#summer-recommand .summer-recommand-container .content-intro-container,
+#summer-recommand .drama-recommand-container .content-intro-container,
+#drama-recommand .daily-recommand-container .content-intro-container,
+#drama-recommand .monthly-recommand-container .content-intro-container,
+#drama-recommand .summer-recommand-container .content-intro-container,
+#drama-recommand .drama-recommand-container .content-intro-container {
+  padding: 16px;
+  width: fit-content;
+  height: fit-content;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 16px;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 8px;
+  opacity: 0;
+  transition: 1s;
+  box-sizing: border-box;
+}
+#daily-recommand .daily-recommand-container .content-intro-container .intro-title-container .intro-title,
+#daily-recommand .monthly-recommand-container .content-intro-container .intro-title-container .intro-title,
+#daily-recommand .summer-recommand-container .content-intro-container .intro-title-container .intro-title,
+#daily-recommand .drama-recommand-container .content-intro-container .intro-title-container .intro-title,
+#monthly-recommand .daily-recommand-container .content-intro-container .intro-title-container .intro-title,
+#monthly-recommand .monthly-recommand-container .content-intro-container .intro-title-container .intro-title,
+#monthly-recommand .summer-recommand-container .content-intro-container .intro-title-container .intro-title,
+#monthly-recommand .drama-recommand-container .content-intro-container .intro-title-container .intro-title,
+#summer-recommand .daily-recommand-container .content-intro-container .intro-title-container .intro-title,
+#summer-recommand .monthly-recommand-container .content-intro-container .intro-title-container .intro-title,
+#summer-recommand .summer-recommand-container .content-intro-container .intro-title-container .intro-title,
+#summer-recommand .drama-recommand-container .content-intro-container .intro-title-container .intro-title,
+#drama-recommand .daily-recommand-container .content-intro-container .intro-title-container .intro-title,
+#drama-recommand .monthly-recommand-container .content-intro-container .intro-title-container .intro-title,
+#drama-recommand .summer-recommand-container .content-intro-container .intro-title-container .intro-title,
+#drama-recommand .drama-recommand-container .content-intro-container .intro-title-container .intro-title {
+  font-size: 64px;
+  margin: 16px 0;
+  line-height: 85px;
+}
+#daily-recommand .daily-recommand-container .content-intro-container .intro-title-container .intro-title.gladiator,
+#daily-recommand .monthly-recommand-container .content-intro-container .intro-title-container .intro-title.gladiator,
+#daily-recommand .summer-recommand-container .content-intro-container .intro-title-container .intro-title.gladiator,
+#daily-recommand .drama-recommand-container .content-intro-container .intro-title-container .intro-title.gladiator,
+#monthly-recommand .daily-recommand-container .content-intro-container .intro-title-container .intro-title.gladiator,
+#monthly-recommand .monthly-recommand-container .content-intro-container .intro-title-container .intro-title.gladiator,
+#monthly-recommand .summer-recommand-container .content-intro-container .intro-title-container .intro-title.gladiator,
+#monthly-recommand .drama-recommand-container .content-intro-container .intro-title-container .intro-title.gladiator,
+#summer-recommand .daily-recommand-container .content-intro-container .intro-title-container .intro-title.gladiator,
+#summer-recommand .monthly-recommand-container .content-intro-container .intro-title-container .intro-title.gladiator,
+#summer-recommand .summer-recommand-container .content-intro-container .intro-title-container .intro-title.gladiator,
+#summer-recommand .drama-recommand-container .content-intro-container .intro-title-container .intro-title.gladiator,
+#drama-recommand .daily-recommand-container .content-intro-container .intro-title-container .intro-title.gladiator,
+#drama-recommand .monthly-recommand-container .content-intro-container .intro-title-container .intro-title.gladiator,
+#drama-recommand .summer-recommand-container .content-intro-container .intro-title-container .intro-title.gladiator,
+#drama-recommand .drama-recommand-container .content-intro-container .intro-title-container .intro-title.gladiator {
+  font-family: "Danjo-bold-Regular";
+}
+#daily-recommand .daily-recommand-container .content-intro-container .intro-title-container .intro-title.op-chromite,
+#daily-recommand .monthly-recommand-container .content-intro-container .intro-title-container .intro-title.op-chromite,
+#daily-recommand .summer-recommand-container .content-intro-container .intro-title-container .intro-title.op-chromite,
+#daily-recommand .drama-recommand-container .content-intro-container .intro-title-container .intro-title.op-chromite,
+#monthly-recommand .daily-recommand-container .content-intro-container .intro-title-container .intro-title.op-chromite,
+#monthly-recommand .monthly-recommand-container .content-intro-container .intro-title-container .intro-title.op-chromite,
+#monthly-recommand .summer-recommand-container .content-intro-container .intro-title-container .intro-title.op-chromite,
+#monthly-recommand .drama-recommand-container .content-intro-container .intro-title-container .intro-title.op-chromite,
+#summer-recommand .daily-recommand-container .content-intro-container .intro-title-container .intro-title.op-chromite,
+#summer-recommand .monthly-recommand-container .content-intro-container .intro-title-container .intro-title.op-chromite,
+#summer-recommand .summer-recommand-container .content-intro-container .intro-title-container .intro-title.op-chromite,
+#summer-recommand .drama-recommand-container .content-intro-container .intro-title-container .intro-title.op-chromite,
+#drama-recommand .daily-recommand-container .content-intro-container .intro-title-container .intro-title.op-chromite,
+#drama-recommand .monthly-recommand-container .content-intro-container .intro-title-container .intro-title.op-chromite,
+#drama-recommand .summer-recommand-container .content-intro-container .intro-title-container .intro-title.op-chromite,
+#drama-recommand .drama-recommand-container .content-intro-container .intro-title-container .intro-title.op-chromite {
+  font-family: "SBAggroB";
+}
+#daily-recommand .daily-recommand-container .content-intro-container .intro-title-container .intro-title.aquaman,
+#daily-recommand .monthly-recommand-container .content-intro-container .intro-title-container .intro-title.aquaman,
+#daily-recommand .summer-recommand-container .content-intro-container .intro-title-container .intro-title.aquaman,
+#daily-recommand .drama-recommand-container .content-intro-container .intro-title-container .intro-title.aquaman,
+#monthly-recommand .daily-recommand-container .content-intro-container .intro-title-container .intro-title.aquaman,
+#monthly-recommand .monthly-recommand-container .content-intro-container .intro-title-container .intro-title.aquaman,
+#monthly-recommand .summer-recommand-container .content-intro-container .intro-title-container .intro-title.aquaman,
+#monthly-recommand .drama-recommand-container .content-intro-container .intro-title-container .intro-title.aquaman,
+#summer-recommand .daily-recommand-container .content-intro-container .intro-title-container .intro-title.aquaman,
+#summer-recommand .monthly-recommand-container .content-intro-container .intro-title-container .intro-title.aquaman,
+#summer-recommand .summer-recommand-container .content-intro-container .intro-title-container .intro-title.aquaman,
+#summer-recommand .drama-recommand-container .content-intro-container .intro-title-container .intro-title.aquaman,
+#drama-recommand .daily-recommand-container .content-intro-container .intro-title-container .intro-title.aquaman,
+#drama-recommand .monthly-recommand-container .content-intro-container .intro-title-container .intro-title.aquaman,
+#drama-recommand .summer-recommand-container .content-intro-container .intro-title-container .intro-title.aquaman,
+#drama-recommand .drama-recommand-container .content-intro-container .intro-title-container .intro-title.aquaman {
+  font-family: "S-CoreDream-3Light";
+  font-weight: 900;
+}
+#daily-recommand .daily-recommand-container .content-intro-container .intro-title-container .intro-title.mr-sunshine,
+#daily-recommand .monthly-recommand-container .content-intro-container .intro-title-container .intro-title.mr-sunshine,
+#daily-recommand .summer-recommand-container .content-intro-container .intro-title-container .intro-title.mr-sunshine,
+#daily-recommand .drama-recommand-container .content-intro-container .intro-title-container .intro-title.mr-sunshine,
+#monthly-recommand .daily-recommand-container .content-intro-container .intro-title-container .intro-title.mr-sunshine,
+#monthly-recommand .monthly-recommand-container .content-intro-container .intro-title-container .intro-title.mr-sunshine,
+#monthly-recommand .summer-recommand-container .content-intro-container .intro-title-container .intro-title.mr-sunshine,
+#monthly-recommand .drama-recommand-container .content-intro-container .intro-title-container .intro-title.mr-sunshine,
+#summer-recommand .daily-recommand-container .content-intro-container .intro-title-container .intro-title.mr-sunshine,
+#summer-recommand .monthly-recommand-container .content-intro-container .intro-title-container .intro-title.mr-sunshine,
+#summer-recommand .summer-recommand-container .content-intro-container .intro-title-container .intro-title.mr-sunshine,
+#summer-recommand .drama-recommand-container .content-intro-container .intro-title-container .intro-title.mr-sunshine,
+#drama-recommand .daily-recommand-container .content-intro-container .intro-title-container .intro-title.mr-sunshine,
+#drama-recommand .monthly-recommand-container .content-intro-container .intro-title-container .intro-title.mr-sunshine,
+#drama-recommand .summer-recommand-container .content-intro-container .intro-title-container .intro-title.mr-sunshine,
+#drama-recommand .drama-recommand-container .content-intro-container .intro-title-container .intro-title.mr-sunshine {
+  font-family: "Ownglyph_JAEGEONSA-Rg";
+}
+#daily-recommand .daily-recommand-container .content-intro-container .content-intro p,
+#daily-recommand .monthly-recommand-container .content-intro-container .content-intro p,
+#daily-recommand .summer-recommand-container .content-intro-container .content-intro p,
+#daily-recommand .drama-recommand-container .content-intro-container .content-intro p,
+#monthly-recommand .daily-recommand-container .content-intro-container .content-intro p,
+#monthly-recommand .monthly-recommand-container .content-intro-container .content-intro p,
+#monthly-recommand .summer-recommand-container .content-intro-container .content-intro p,
+#monthly-recommand .drama-recommand-container .content-intro-container .content-intro p,
+#summer-recommand .daily-recommand-container .content-intro-container .content-intro p,
+#summer-recommand .monthly-recommand-container .content-intro-container .content-intro p,
+#summer-recommand .summer-recommand-container .content-intro-container .content-intro p,
+#summer-recommand .drama-recommand-container .content-intro-container .content-intro p,
+#drama-recommand .daily-recommand-container .content-intro-container .content-intro p,
+#drama-recommand .monthly-recommand-container .content-intro-container .content-intro p,
+#drama-recommand .summer-recommand-container .content-intro-container .content-intro p,
+#drama-recommand .drama-recommand-container .content-intro-container .content-intro p {
+  font-size: 14px;
+  color: #c0c0c0;
+  font-weight: bold;
+  margin-bottom: 8px;
+  line-height: 150%;
+}
+#daily-recommand .daily-recommand-container .content-intro-container .content-intro p span,
+#daily-recommand .monthly-recommand-container .content-intro-container .content-intro p span,
+#daily-recommand .summer-recommand-container .content-intro-container .content-intro p span,
+#daily-recommand .drama-recommand-container .content-intro-container .content-intro p span,
+#monthly-recommand .daily-recommand-container .content-intro-container .content-intro p span,
+#monthly-recommand .monthly-recommand-container .content-intro-container .content-intro p span,
+#monthly-recommand .summer-recommand-container .content-intro-container .content-intro p span,
+#monthly-recommand .drama-recommand-container .content-intro-container .content-intro p span,
+#summer-recommand .daily-recommand-container .content-intro-container .content-intro p span,
+#summer-recommand .monthly-recommand-container .content-intro-container .content-intro p span,
+#summer-recommand .summer-recommand-container .content-intro-container .content-intro p span,
+#summer-recommand .drama-recommand-container .content-intro-container .content-intro p span,
+#drama-recommand .daily-recommand-container .content-intro-container .content-intro p span,
+#drama-recommand .monthly-recommand-container .content-intro-container .content-intro p span,
+#drama-recommand .summer-recommand-container .content-intro-container .content-intro p span,
+#drama-recommand .drama-recommand-container .content-intro-container .content-intro p span {
+  font-size: 18px;
+  color: #fff;
+}
+#daily-recommand .daily-recommand-container .content-intro-container .content-quote,
+#daily-recommand .monthly-recommand-container .content-intro-container .content-quote,
+#daily-recommand .summer-recommand-container .content-intro-container .content-quote,
+#daily-recommand .drama-recommand-container .content-intro-container .content-quote,
+#monthly-recommand .daily-recommand-container .content-intro-container .content-quote,
+#monthly-recommand .monthly-recommand-container .content-intro-container .content-quote,
+#monthly-recommand .summer-recommand-container .content-intro-container .content-quote,
+#monthly-recommand .drama-recommand-container .content-intro-container .content-quote,
+#summer-recommand .daily-recommand-container .content-intro-container .content-quote,
+#summer-recommand .monthly-recommand-container .content-intro-container .content-quote,
+#summer-recommand .summer-recommand-container .content-intro-container .content-quote,
+#summer-recommand .drama-recommand-container .content-intro-container .content-quote,
+#drama-recommand .daily-recommand-container .content-intro-container .content-quote,
+#drama-recommand .monthly-recommand-container .content-intro-container .content-quote,
+#drama-recommand .summer-recommand-container .content-intro-container .content-quote,
+#drama-recommand .drama-recommand-container .content-intro-container .content-quote {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 8px;
+  line-height: 150%;
+  font-size: 22px;
+}
+#daily-recommand .daily-recommand-container .content-intro-container .content-info,
+#daily-recommand .monthly-recommand-container .content-intro-container .content-info,
+#daily-recommand .summer-recommand-container .content-intro-container .content-info,
+#daily-recommand .drama-recommand-container .content-intro-container .content-info,
+#monthly-recommand .daily-recommand-container .content-intro-container .content-info,
+#monthly-recommand .monthly-recommand-container .content-intro-container .content-info,
+#monthly-recommand .summer-recommand-container .content-intro-container .content-info,
+#monthly-recommand .drama-recommand-container .content-intro-container .content-info,
+#summer-recommand .daily-recommand-container .content-intro-container .content-info,
+#summer-recommand .monthly-recommand-container .content-intro-container .content-info,
+#summer-recommand .summer-recommand-container .content-intro-container .content-info,
+#summer-recommand .drama-recommand-container .content-intro-container .content-info,
+#drama-recommand .daily-recommand-container .content-intro-container .content-info,
+#drama-recommand .monthly-recommand-container .content-intro-container .content-info,
+#drama-recommand .summer-recommand-container .content-intro-container .content-info,
+#drama-recommand .drama-recommand-container .content-intro-container .content-info {
+  font-size: 12px;
+  color: #fff;
+}
+#daily-recommand .daily-recommand-container .content-intro-container .content-info span.running-time,
+#daily-recommand .monthly-recommand-container .content-intro-container .content-info span.running-time,
+#daily-recommand .summer-recommand-container .content-intro-container .content-info span.running-time,
+#daily-recommand .drama-recommand-container .content-intro-container .content-info span.running-time,
+#monthly-recommand .daily-recommand-container .content-intro-container .content-info span.running-time,
+#monthly-recommand .monthly-recommand-container .content-intro-container .content-info span.running-time,
+#monthly-recommand .summer-recommand-container .content-intro-container .content-info span.running-time,
+#monthly-recommand .drama-recommand-container .content-intro-container .content-info span.running-time,
+#summer-recommand .daily-recommand-container .content-intro-container .content-info span.running-time,
+#summer-recommand .monthly-recommand-container .content-intro-container .content-info span.running-time,
+#summer-recommand .summer-recommand-container .content-intro-container .content-info span.running-time,
+#summer-recommand .drama-recommand-container .content-intro-container .content-info span.running-time,
+#drama-recommand .daily-recommand-container .content-intro-container .content-info span.running-time,
+#drama-recommand .monthly-recommand-container .content-intro-container .content-info span.running-time,
+#drama-recommand .summer-recommand-container .content-intro-container .content-info span.running-time,
+#drama-recommand .drama-recommand-container .content-intro-container .content-info span.running-time {
+  color: orange;
+  font-weight: bold;
+}
+
+.daily-recommand-slider-container,
+.monthly-recommand-slider-container,
+.summer-recommand-slider-container,
+.drama-recommand-slider-container {
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 1260px;
+  height: 410px;
+  box-shadow: none;
+  background: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  bottom: 0px;
+}
+.daily-recommand-slider-container .daily-title,
+.daily-recommand-slider-container .monthly-title,
+.daily-recommand-slider-container .summer-title,
+.daily-recommand-slider-container .drama-title,
+.monthly-recommand-slider-container .daily-title,
+.monthly-recommand-slider-container .monthly-title,
+.monthly-recommand-slider-container .summer-title,
+.monthly-recommand-slider-container .drama-title,
+.summer-recommand-slider-container .daily-title,
+.summer-recommand-slider-container .monthly-title,
+.summer-recommand-slider-container .summer-title,
+.summer-recommand-slider-container .drama-title,
+.drama-recommand-slider-container .daily-title,
+.drama-recommand-slider-container .monthly-title,
+.drama-recommand-slider-container .summer-title,
+.drama-recommand-slider-container .drama-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.daily-recommand-slider-container .daily-title .label,
+.daily-recommand-slider-container .monthly-title .label,
+.daily-recommand-slider-container .summer-title .label,
+.daily-recommand-slider-container .drama-title .label,
+.monthly-recommand-slider-container .daily-title .label,
+.monthly-recommand-slider-container .monthly-title .label,
+.monthly-recommand-slider-container .summer-title .label,
+.monthly-recommand-slider-container .drama-title .label,
+.summer-recommand-slider-container .daily-title .label,
+.summer-recommand-slider-container .monthly-title .label,
+.summer-recommand-slider-container .summer-title .label,
+.summer-recommand-slider-container .drama-title .label,
+.drama-recommand-slider-container .daily-title .label,
+.drama-recommand-slider-container .monthly-title .label,
+.drama-recommand-slider-container .summer-title .label,
+.drama-recommand-slider-container .drama-title .label {
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+}
+.daily-recommand-slider-container .daily-title .btn-more,
+.daily-recommand-slider-container .monthly-title .btn-more,
+.daily-recommand-slider-container .summer-title .btn-more,
+.daily-recommand-slider-container .drama-title .btn-more,
+.monthly-recommand-slider-container .daily-title .btn-more,
+.monthly-recommand-slider-container .monthly-title .btn-more,
+.monthly-recommand-slider-container .summer-title .btn-more,
+.monthly-recommand-slider-container .drama-title .btn-more,
+.summer-recommand-slider-container .daily-title .btn-more,
+.summer-recommand-slider-container .monthly-title .btn-more,
+.summer-recommand-slider-container .summer-title .btn-more,
+.summer-recommand-slider-container .drama-title .btn-more,
+.drama-recommand-slider-container .daily-title .btn-more,
+.drama-recommand-slider-container .monthly-title .btn-more,
+.drama-recommand-slider-container .summer-title .btn-more,
+.drama-recommand-slider-container .drama-title .btn-more {
+  text-decoration: none;
+  font-size: 16px;
+  color: #a5a5a5;
+}
+.daily-recommand-slider-container .bx-wrapper,
+.monthly-recommand-slider-container .bx-wrapper,
+.summer-recommand-slider-container .bx-wrapper,
+.drama-recommand-slider-container .bx-wrapper {
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+.daily-recommand-slider-container .bx-wrapper ul li,
+.monthly-recommand-slider-container .bx-wrapper ul li,
+.summer-recommand-slider-container .bx-wrapper ul li,
+.drama-recommand-slider-container .bx-wrapper ul li {
+  width: 240px;
+  height: 360px;
+  border-radius: 4px;
+}
+.daily-recommand-slider-container .bx-wrapper ul li a,
+.monthly-recommand-slider-container .bx-wrapper ul li a,
+.summer-recommand-slider-container .bx-wrapper ul li a,
+.drama-recommand-slider-container .bx-wrapper ul li a {
+  width: 240px;
+  height: 360px;
+  /* object-fit: cover; */
+}
+.daily-recommand-slider-container .bx-wrapper ul li a img,
+.monthly-recommand-slider-container .bx-wrapper ul li a img,
+.summer-recommand-slider-container .bx-wrapper ul li a img,
+.drama-recommand-slider-container .bx-wrapper ul li a img {
+  width: 100%;
+  height: 100%;
+  object-position: right bottom;
+  object-fit: cover;
+}
+.daily-recommand-slider-container .bx-pager,
+.monthly-recommand-slider-container .bx-pager,
+.summer-recommand-slider-container .bx-pager,
+.drama-recommand-slider-container .bx-pager {
+  display: none;
+  box-shadow: none;
+}
+
+#editor-recommand li,
+#daily-recommand li,
+#monthly-recommand li,
+#summer-recommand li,
+#drama-recommand li,
+#heartbeat-comingsoon li {
+  overflow: hidden;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+#editor-recommand li img,
+#daily-recommand li img,
+#monthly-recommand li img,
+#summer-recommand li img,
+#drama-recommand li img,
+#heartbeat-comingsoon li img {
+  object-fit: cover;
+  object-position: top;
+}
+
+#daily-recommand {
+  background-image: url("../img/메인 - 글래디에이터.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#monthly-recommand {
+  background-image: url("../img/메인 - 인천상륙작전(6월).jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#summer-recommand {
+  background-image: url("../img/메인 - 아쿠아맨.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#drama-recommand {
+  background-image: url("../img/메인 - 미스터 션샤인.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* @media screen and (max-width:1100px) {} */
+/* @media screen and (max-width:500px) {} */
+/* common end ------------------------------------------------------------*/
+/* fixed start ----------------------------------------------------------*/
+.fixed {
+  position: relative;
+}
+.fixed .fixed-tab {
+  position: fixed;
+  top: 20%;
+  width: 120px;
+  height: 100px;
+  left: -150px;
+  box-sizing: border-box;
+  border-radius: 0 50px 50px 0;
+  background-color: var(--color-wavve-blue);
+  transition: 1s;
+  cursor: pointer;
+  z-index: 800;
+}
+.fixed .fixed-tab .fixed-tab-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 2px;
+  position: absolute;
+}
+.fixed .fixed-tab .fixed-tab-inner h3 {
+  font-size: 31px;
+  color: #fff;
+  font-weight: bold;
+}
+.fixed .fixed-tab .fixed-tab-inner p {
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+}
+.fixed .sidebar {
+  position: fixed;
+  /* left: -500px; */
+  right: -100%;
+  bottom: 0px;
+  width: 400px;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  box-sizing: border-box;
+  transition: 1s;
+  z-index: 800;
+}
+.fixed .sidebar .sidebar-container {
+  height: fit-content;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.fixed .sidebar .sidebar-container div h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.fixed .sidebar .sidebar-container div p {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: gray;
+  margin-bottom: 32px;
+}
+.fixed .sidebar .sidebar-container div button {
+  width: 100%;
+  height: 60px;
+  background-color: var(--color-wavve-blue);
+  border-radius: 4px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  display: block;
+}
+.fixed .sidebar .sidebar-container div .sidebar-close-btn {
+  font-size: 40px;
+  color: white;
+  text-align: right;
+  text-decoration: none;
+  top: 10%;
+  right: 10%;
+  background-color: transparent;
+}
+.fixed .sidebar .sidebar-container div h2 {
+  font-size: 32px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.top-btn {
+  width: 50px;
+  height: 50px;
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 900;
+  font-size: 18px;
+  border: none;
+  background-color: gray;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.promotion {
+  background-color: #142a66;
+  width: 100%;
+  height: fit-content;
+  position: fixed;
+  opacity: 0;
+  transition: 1s;
+  bottom: 0px;
+  z-index: 800;
+}
+.promotion.appear {
+  opacity: 1;
+}
+.promotion .promotion-container {
+  margin: 0 auto;
+  max-width: 1240px;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
+}
+.promotion .promotion-container .text-container {
+  /* border: 1px solid red; */
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.promotion .promotion-container .text-container p {
+  color: #fff;
+  font-weight: bold;
+}
+.promotion .promotion-container .text-container p span {
+  /* font-size: 32px; */
+  color: orange;
+}
+.promotion .promotion-container .promotion-btn-container button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  appearance: none;
+  border: 0;
+  background: 0;
+  position: relative;
+  color: white;
+  font-weight: 400;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+}
+.promotion .promotion-container .promotion-btn-container button:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 0 0 2px white;
+  border-radius: inherit;
+  mix-blend-mode: overlay;
+}
+.promotion .promotion-container .promotion-btn-container button iframe {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1) rotate(15deg);
+  opacity: 0.5;
+  filter: blur(5px);
+  transition: all 0.5s ease-in-out;
+}
+.promotion .promotion-container .promotion-btn-container button span {
+  position: relative;
+  z-index: 1;
+  /* opacity: 0.75; */
+  color: yellow;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+}
+.promotion .promotion-container .promotion-btn-container button:hover iframe {
+  transform: translate(-50%, -50%) scale(0.5);
+  opacity: 1;
+  filter: blur(0);
+}
+.promotion .promotion-container .promotion-btn-container button:hover span {
+  opacity: 1;
+}
+
+/* fixed end ----------------------------------------------------------*/

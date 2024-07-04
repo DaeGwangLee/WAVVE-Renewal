@@ -1,0 +1,714 @@
+@charset "UTF-8";
+/* header start --------------------------------------------------------------------------------*/
+@media screen and (max-width: 500px) {
+  header .description {
+    display: none;
+  }
+}
+/* header end --------------------------------------------------------------------------------*/
+/* main-slider start --------------------------------------------------------------------------------*/
+/* @media screen and (max-width:1100px) {} */
+@media screen and (max-width: 800px) {
+  #main-slider .bx-wrapper {
+    height: fit-content;
+  }
+  #main-slider .bx-wrapper li a img.desktop {
+    display: none;
+  }
+  #main-slider .bx-wrapper li a img.tablet {
+    display: block;
+    object-fit: cover;
+    height: fit-content;
+  }
+  #main-slider #bx-pager {
+    width: 100%;
+    height: 25%;
+    bottom: 0px;
+    box-sizing: border-box;
+    background: linear-gradient(transparent 10%, #040713 40%);
+  }
+  #main-slider #bx-pager a {
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+    border-radius: 10px;
+    margin: 0 16px;
+  }
+  #main-slider #bx-pager a:hover {
+    background-color: white;
+  }
+  #main-slider #bx-pager img {
+    display: none;
+  }
+}
+/* main-slider end --------------------------------------------------------------------------------*/
+/* merit start --------------------------------------------------------------------------------*/
+@media screen and (max-width: 1100px) {
+  .wavve-merit-container > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .wavve-merit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+  }
+
+  .wavve-merit::after {
+    height: 1px;
+    width: 100%;
+    top: 100%;
+    transform: none;
+  }
+
+  .wavve-merit:nth-child(3)::after {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .wavve-merit-container > ul {
+    display: block;
+  }
+
+  .wavve-merit {
+    margin: 0;
+  }
+
+  .wavve-merit:nth-child(3)::after {
+    display: block;
+  }
+}
+/* merit end --------------------------------------------------------------------------------*/
+/* membership start --------------------------------------------------------------------------------*/
+@media screen and (max-width: 1100px) {
+  #membership-table .membership-container .membership-table-container .table-row {
+    height: fit-content;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #membership-table .membership-container .membership-table-container .table-row .table-column.membership-monthly.blank {
+    display: none;
+  }
+  #membership-table .membership-container .membership-table-container .table-row .table-column.item {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  #membership-table .membership-container .membership-table-container .table-row .table-column:nth-of-type(2) {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  #membership-table .membership-container .membership-table-container .table-row .table-column:nth-of-type(3) {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  #membership-table .membership-container .membership-table-container .table-row .table-column.premium {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-color: transparent;
+  }
+  #membership-table .membership-container .membership-table-container .table-row .table-column.membership-monthly.premium.desktop {
+    background-color: #1d1f2b;
+  }
+  #membership-table .membership-container .membership-table-container .table-row.membership-monthly {
+    grid-template-rows: 1fr;
+  }
+  #membership-table .membership-container .membership-table-container .table-row.membership-yearly {
+    grid-template-rows: 54px 1fr;
+  }
+  #membership-table .membership-container .membership-table-container .table-row.membership-yearly .table-column.item {
+    height: fit-content;
+  }
+}
+/* @media screen and (max-width:430px) {} */
+/* @media screen and (max-width:483px) {} */
+/* @media screen and (max-width:500px) {} */
+@media screen and (max-width: 768px) {
+  #membership-table .membership-container .table-title-container h1 {
+    font-size: 20px;
+  }
+  #membership-table .membership-container .table-title-container p {
+    font-size: 10px;
+  }
+  #membership-table .membership-container .membership-table-container .table-row {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  #membership-table .membership-container .membership-table-container .table-row .table-column.item {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  #membership-table .membership-container .membership-table-container .table-row .table-column h5 {
+    font-size: 16px;
+  }
+  #membership-table .membership-container .membership-table-container .table-row .table-column p {
+    font-size: 13px;
+  }
+  #membership-table .membership-container .membership-table-container .table-row .table-column.premium.desktop {
+    display: none;
+  }
+  #membership-table .premium-membership-container.mobile {
+    display: block;
+  }
+}
+/* membership end --------------------------------------------------------------------------------*/
+/* faq start --------------------------------------------------------------------------------*/
+/* @media screen and (max-width:483px) {} */
+/* @media screen and (max-width:430px) {} */
+@media screen and (max-width: 430px) {
+  #faq h2 {
+    font-size: 12px;
+  }
+  #faq p {
+    font-size: 11px;
+  }
+}
+/* faq end --------------------------------------------------------------------------------*/
+/* footer start --------------------------------------------------------------------------------*/
+@media screen and (max-width: 1024px) {
+  #footer .footer-container .footer-info-and-social .footer-info .footer-info-container p {
+    font-size: 0.8rem;
+  }
+}
+/* @media screen and (max-width:430px) {} */
+/* @media screen and (max-width:483px) {} */
+/* @media screen and (max-width:860px) {} */
+/* @media screen and (max-width:768px) {} */
+/* @media screen and (max-width:500px) {} */
+@media screen and (max-width: 500px) {
+  #footer .footer-container .footer-logo .footer-logo-container {
+    width: 35%;
+  }
+  #footer .footer-container .footer-util .footer-util-container {
+    padding: 8px 0;
+  }
+  #footer .footer-container .footer-util .footer-util-container li a {
+    font-size: 8px;
+  }
+  #footer .footer-container .footer-info-and-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  #footer .footer-container .footer-info-and-social .footer-info {
+    width: 100%;
+  }
+  #footer .footer-container .footer-info-and-social .footer-info .footer-info-container p {
+    width: 100%;
+    font-size: 6px;
+    line-height: 150%;
+  }
+  #footer .footer-container .footer-info-and-social .footer-info .footer-info-container p span {
+    font-size: 12px;
+  }
+  #footer .footer-container .footer-info-and-social .footer-social {
+    width: 100%;
+  }
+  #footer .footer-container .footer-info-and-social .footer-social .footer-social-container {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+}
+/* footer end --------------------------------------------------------------------------------*/
+/* common start -------------------------------------------------------------------------------- */
+@media screen and (max-width: 1249px) {
+  #daily-recommand .daily-recommand-container .content-intro-container.gladiator,
+#daily-recommand .daily-recommand-container .content-intro-container.op-chromite,
+#daily-recommand .daily-recommand-container .content-intro-container.aquaman,
+#daily-recommand .daily-recommand-container .content-intro-container.mr-sunshine,
+#daily-recommand .monthly-recommand-container .content-intro-container.gladiator,
+#daily-recommand .monthly-recommand-container .content-intro-container.op-chromite,
+#daily-recommand .monthly-recommand-container .content-intro-container.aquaman,
+#daily-recommand .monthly-recommand-container .content-intro-container.mr-sunshine,
+#daily-recommand .summer-recommand-container .content-intro-container.gladiator,
+#daily-recommand .summer-recommand-container .content-intro-container.op-chromite,
+#daily-recommand .summer-recommand-container .content-intro-container.aquaman,
+#daily-recommand .summer-recommand-container .content-intro-container.mr-sunshine,
+#daily-recommand .drama-recommand-container .content-intro-container.gladiator,
+#daily-recommand .drama-recommand-container .content-intro-container.op-chromite,
+#daily-recommand .drama-recommand-container .content-intro-container.aquaman,
+#daily-recommand .drama-recommand-container .content-intro-container.mr-sunshine,
+#monthly-recommand .daily-recommand-container .content-intro-container.gladiator,
+#monthly-recommand .daily-recommand-container .content-intro-container.op-chromite,
+#monthly-recommand .daily-recommand-container .content-intro-container.aquaman,
+#monthly-recommand .daily-recommand-container .content-intro-container.mr-sunshine,
+#monthly-recommand .monthly-recommand-container .content-intro-container.gladiator,
+#monthly-recommand .monthly-recommand-container .content-intro-container.op-chromite,
+#monthly-recommand .monthly-recommand-container .content-intro-container.aquaman,
+#monthly-recommand .monthly-recommand-container .content-intro-container.mr-sunshine,
+#monthly-recommand .summer-recommand-container .content-intro-container.gladiator,
+#monthly-recommand .summer-recommand-container .content-intro-container.op-chromite,
+#monthly-recommand .summer-recommand-container .content-intro-container.aquaman,
+#monthly-recommand .summer-recommand-container .content-intro-container.mr-sunshine,
+#monthly-recommand .drama-recommand-container .content-intro-container.gladiator,
+#monthly-recommand .drama-recommand-container .content-intro-container.op-chromite,
+#monthly-recommand .drama-recommand-container .content-intro-container.aquaman,
+#monthly-recommand .drama-recommand-container .content-intro-container.mr-sunshine,
+#summer-recommand .daily-recommand-container .content-intro-container.gladiator,
+#summer-recommand .daily-recommand-container .content-intro-container.op-chromite,
+#summer-recommand .daily-recommand-container .content-intro-container.aquaman,
+#summer-recommand .daily-recommand-container .content-intro-container.mr-sunshine,
+#summer-recommand .monthly-recommand-container .content-intro-container.gladiator,
+#summer-recommand .monthly-recommand-container .content-intro-container.op-chromite,
+#summer-recommand .monthly-recommand-container .content-intro-container.aquaman,
+#summer-recommand .monthly-recommand-container .content-intro-container.mr-sunshine,
+#summer-recommand .summer-recommand-container .content-intro-container.gladiator,
+#summer-recommand .summer-recommand-container .content-intro-container.op-chromite,
+#summer-recommand .summer-recommand-container .content-intro-container.aquaman,
+#summer-recommand .summer-recommand-container .content-intro-container.mr-sunshine,
+#summer-recommand .drama-recommand-container .content-intro-container.gladiator,
+#summer-recommand .drama-recommand-container .content-intro-container.op-chromite,
+#summer-recommand .drama-recommand-container .content-intro-container.aquaman,
+#summer-recommand .drama-recommand-container .content-intro-container.mr-sunshine,
+#drama-recommand .daily-recommand-container .content-intro-container.gladiator,
+#drama-recommand .daily-recommand-container .content-intro-container.op-chromite,
+#drama-recommand .daily-recommand-container .content-intro-container.aquaman,
+#drama-recommand .daily-recommand-container .content-intro-container.mr-sunshine,
+#drama-recommand .monthly-recommand-container .content-intro-container.gladiator,
+#drama-recommand .monthly-recommand-container .content-intro-container.op-chromite,
+#drama-recommand .monthly-recommand-container .content-intro-container.aquaman,
+#drama-recommand .monthly-recommand-container .content-intro-container.mr-sunshine,
+#drama-recommand .summer-recommand-container .content-intro-container.gladiator,
+#drama-recommand .summer-recommand-container .content-intro-container.op-chromite,
+#drama-recommand .summer-recommand-container .content-intro-container.aquaman,
+#drama-recommand .summer-recommand-container .content-intro-container.mr-sunshine,
+#drama-recommand .drama-recommand-container .content-intro-container.gladiator,
+#drama-recommand .drama-recommand-container .content-intro-container.op-chromite,
+#drama-recommand .drama-recommand-container .content-intro-container.aquaman,
+#drama-recommand .drama-recommand-container .content-intro-container.mr-sunshine {
+    justify-content: flex-end;
+    padding-bottom: 500px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #daily-recommand .daily-recommand-container .content-intro-container.gladiator div h2,
+#daily-recommand .daily-recommand-container .content-intro-container.gladiator div p,
+#daily-recommand .daily-recommand-container .content-intro-container.op-chromite div h2,
+#daily-recommand .daily-recommand-container .content-intro-container.op-chromite div p,
+#daily-recommand .daily-recommand-container .content-intro-container.aquaman div h2,
+#daily-recommand .daily-recommand-container .content-intro-container.aquaman div p,
+#daily-recommand .daily-recommand-container .content-intro-container.mr-sunshine div h2,
+#daily-recommand .daily-recommand-container .content-intro-container.mr-sunshine div p,
+#daily-recommand .monthly-recommand-container .content-intro-container.gladiator div h2,
+#daily-recommand .monthly-recommand-container .content-intro-container.gladiator div p,
+#daily-recommand .monthly-recommand-container .content-intro-container.op-chromite div h2,
+#daily-recommand .monthly-recommand-container .content-intro-container.op-chromite div p,
+#daily-recommand .monthly-recommand-container .content-intro-container.aquaman div h2,
+#daily-recommand .monthly-recommand-container .content-intro-container.aquaman div p,
+#daily-recommand .monthly-recommand-container .content-intro-container.mr-sunshine div h2,
+#daily-recommand .monthly-recommand-container .content-intro-container.mr-sunshine div p,
+#daily-recommand .summer-recommand-container .content-intro-container.gladiator div h2,
+#daily-recommand .summer-recommand-container .content-intro-container.gladiator div p,
+#daily-recommand .summer-recommand-container .content-intro-container.op-chromite div h2,
+#daily-recommand .summer-recommand-container .content-intro-container.op-chromite div p,
+#daily-recommand .summer-recommand-container .content-intro-container.aquaman div h2,
+#daily-recommand .summer-recommand-container .content-intro-container.aquaman div p,
+#daily-recommand .summer-recommand-container .content-intro-container.mr-sunshine div h2,
+#daily-recommand .summer-recommand-container .content-intro-container.mr-sunshine div p,
+#daily-recommand .drama-recommand-container .content-intro-container.gladiator div h2,
+#daily-recommand .drama-recommand-container .content-intro-container.gladiator div p,
+#daily-recommand .drama-recommand-container .content-intro-container.op-chromite div h2,
+#daily-recommand .drama-recommand-container .content-intro-container.op-chromite div p,
+#daily-recommand .drama-recommand-container .content-intro-container.aquaman div h2,
+#daily-recommand .drama-recommand-container .content-intro-container.aquaman div p,
+#daily-recommand .drama-recommand-container .content-intro-container.mr-sunshine div h2,
+#daily-recommand .drama-recommand-container .content-intro-container.mr-sunshine div p,
+#monthly-recommand .daily-recommand-container .content-intro-container.gladiator div h2,
+#monthly-recommand .daily-recommand-container .content-intro-container.gladiator div p,
+#monthly-recommand .daily-recommand-container .content-intro-container.op-chromite div h2,
+#monthly-recommand .daily-recommand-container .content-intro-container.op-chromite div p,
+#monthly-recommand .daily-recommand-container .content-intro-container.aquaman div h2,
+#monthly-recommand .daily-recommand-container .content-intro-container.aquaman div p,
+#monthly-recommand .daily-recommand-container .content-intro-container.mr-sunshine div h2,
+#monthly-recommand .daily-recommand-container .content-intro-container.mr-sunshine div p,
+#monthly-recommand .monthly-recommand-container .content-intro-container.gladiator div h2,
+#monthly-recommand .monthly-recommand-container .content-intro-container.gladiator div p,
+#monthly-recommand .monthly-recommand-container .content-intro-container.op-chromite div h2,
+#monthly-recommand .monthly-recommand-container .content-intro-container.op-chromite div p,
+#monthly-recommand .monthly-recommand-container .content-intro-container.aquaman div h2,
+#monthly-recommand .monthly-recommand-container .content-intro-container.aquaman div p,
+#monthly-recommand .monthly-recommand-container .content-intro-container.mr-sunshine div h2,
+#monthly-recommand .monthly-recommand-container .content-intro-container.mr-sunshine div p,
+#monthly-recommand .summer-recommand-container .content-intro-container.gladiator div h2,
+#monthly-recommand .summer-recommand-container .content-intro-container.gladiator div p,
+#monthly-recommand .summer-recommand-container .content-intro-container.op-chromite div h2,
+#monthly-recommand .summer-recommand-container .content-intro-container.op-chromite div p,
+#monthly-recommand .summer-recommand-container .content-intro-container.aquaman div h2,
+#monthly-recommand .summer-recommand-container .content-intro-container.aquaman div p,
+#monthly-recommand .summer-recommand-container .content-intro-container.mr-sunshine div h2,
+#monthly-recommand .summer-recommand-container .content-intro-container.mr-sunshine div p,
+#monthly-recommand .drama-recommand-container .content-intro-container.gladiator div h2,
+#monthly-recommand .drama-recommand-container .content-intro-container.gladiator div p,
+#monthly-recommand .drama-recommand-container .content-intro-container.op-chromite div h2,
+#monthly-recommand .drama-recommand-container .content-intro-container.op-chromite div p,
+#monthly-recommand .drama-recommand-container .content-intro-container.aquaman div h2,
+#monthly-recommand .drama-recommand-container .content-intro-container.aquaman div p,
+#monthly-recommand .drama-recommand-container .content-intro-container.mr-sunshine div h2,
+#monthly-recommand .drama-recommand-container .content-intro-container.mr-sunshine div p,
+#summer-recommand .daily-recommand-container .content-intro-container.gladiator div h2,
+#summer-recommand .daily-recommand-container .content-intro-container.gladiator div p,
+#summer-recommand .daily-recommand-container .content-intro-container.op-chromite div h2,
+#summer-recommand .daily-recommand-container .content-intro-container.op-chromite div p,
+#summer-recommand .daily-recommand-container .content-intro-container.aquaman div h2,
+#summer-recommand .daily-recommand-container .content-intro-container.aquaman div p,
+#summer-recommand .daily-recommand-container .content-intro-container.mr-sunshine div h2,
+#summer-recommand .daily-recommand-container .content-intro-container.mr-sunshine div p,
+#summer-recommand .monthly-recommand-container .content-intro-container.gladiator div h2,
+#summer-recommand .monthly-recommand-container .content-intro-container.gladiator div p,
+#summer-recommand .monthly-recommand-container .content-intro-container.op-chromite div h2,
+#summer-recommand .monthly-recommand-container .content-intro-container.op-chromite div p,
+#summer-recommand .monthly-recommand-container .content-intro-container.aquaman div h2,
+#summer-recommand .monthly-recommand-container .content-intro-container.aquaman div p,
+#summer-recommand .monthly-recommand-container .content-intro-container.mr-sunshine div h2,
+#summer-recommand .monthly-recommand-container .content-intro-container.mr-sunshine div p,
+#summer-recommand .summer-recommand-container .content-intro-container.gladiator div h2,
+#summer-recommand .summer-recommand-container .content-intro-container.gladiator div p,
+#summer-recommand .summer-recommand-container .content-intro-container.op-chromite div h2,
+#summer-recommand .summer-recommand-container .content-intro-container.op-chromite div p,
+#summer-recommand .summer-recommand-container .content-intro-container.aquaman div h2,
+#summer-recommand .summer-recommand-container .content-intro-container.aquaman div p,
+#summer-recommand .summer-recommand-container .content-intro-container.mr-sunshine div h2,
+#summer-recommand .summer-recommand-container .content-intro-container.mr-sunshine div p,
+#summer-recommand .drama-recommand-container .content-intro-container.gladiator div h2,
+#summer-recommand .drama-recommand-container .content-intro-container.gladiator div p,
+#summer-recommand .drama-recommand-container .content-intro-container.op-chromite div h2,
+#summer-recommand .drama-recommand-container .content-intro-container.op-chromite div p,
+#summer-recommand .drama-recommand-container .content-intro-container.aquaman div h2,
+#summer-recommand .drama-recommand-container .content-intro-container.aquaman div p,
+#summer-recommand .drama-recommand-container .content-intro-container.mr-sunshine div h2,
+#summer-recommand .drama-recommand-container .content-intro-container.mr-sunshine div p,
+#drama-recommand .daily-recommand-container .content-intro-container.gladiator div h2,
+#drama-recommand .daily-recommand-container .content-intro-container.gladiator div p,
+#drama-recommand .daily-recommand-container .content-intro-container.op-chromite div h2,
+#drama-recommand .daily-recommand-container .content-intro-container.op-chromite div p,
+#drama-recommand .daily-recommand-container .content-intro-container.aquaman div h2,
+#drama-recommand .daily-recommand-container .content-intro-container.aquaman div p,
+#drama-recommand .daily-recommand-container .content-intro-container.mr-sunshine div h2,
+#drama-recommand .daily-recommand-container .content-intro-container.mr-sunshine div p,
+#drama-recommand .monthly-recommand-container .content-intro-container.gladiator div h2,
+#drama-recommand .monthly-recommand-container .content-intro-container.gladiator div p,
+#drama-recommand .monthly-recommand-container .content-intro-container.op-chromite div h2,
+#drama-recommand .monthly-recommand-container .content-intro-container.op-chromite div p,
+#drama-recommand .monthly-recommand-container .content-intro-container.aquaman div h2,
+#drama-recommand .monthly-recommand-container .content-intro-container.aquaman div p,
+#drama-recommand .monthly-recommand-container .content-intro-container.mr-sunshine div h2,
+#drama-recommand .monthly-recommand-container .content-intro-container.mr-sunshine div p,
+#drama-recommand .summer-recommand-container .content-intro-container.gladiator div h2,
+#drama-recommand .summer-recommand-container .content-intro-container.gladiator div p,
+#drama-recommand .summer-recommand-container .content-intro-container.op-chromite div h2,
+#drama-recommand .summer-recommand-container .content-intro-container.op-chromite div p,
+#drama-recommand .summer-recommand-container .content-intro-container.aquaman div h2,
+#drama-recommand .summer-recommand-container .content-intro-container.aquaman div p,
+#drama-recommand .summer-recommand-container .content-intro-container.mr-sunshine div h2,
+#drama-recommand .summer-recommand-container .content-intro-container.mr-sunshine div p,
+#drama-recommand .drama-recommand-container .content-intro-container.gladiator div h2,
+#drama-recommand .drama-recommand-container .content-intro-container.gladiator div p,
+#drama-recommand .drama-recommand-container .content-intro-container.op-chromite div h2,
+#drama-recommand .drama-recommand-container .content-intro-container.op-chromite div p,
+#drama-recommand .drama-recommand-container .content-intro-container.aquaman div h2,
+#drama-recommand .drama-recommand-container .content-intro-container.aquaman div p,
+#drama-recommand .drama-recommand-container .content-intro-container.mr-sunshine div h2,
+#drama-recommand .drama-recommand-container .content-intro-container.mr-sunshine div p {
+    text-align: center;
+    font-size: 16px;
+  }
+  #daily-recommand .daily-recommand-container .content-intro-container.gladiator div .intro-title,
+#daily-recommand .daily-recommand-container .content-intro-container.op-chromite div .intro-title,
+#daily-recommand .daily-recommand-container .content-intro-container.aquaman div .intro-title,
+#daily-recommand .daily-recommand-container .content-intro-container.mr-sunshine div .intro-title,
+#daily-recommand .monthly-recommand-container .content-intro-container.gladiator div .intro-title,
+#daily-recommand .monthly-recommand-container .content-intro-container.op-chromite div .intro-title,
+#daily-recommand .monthly-recommand-container .content-intro-container.aquaman div .intro-title,
+#daily-recommand .monthly-recommand-container .content-intro-container.mr-sunshine div .intro-title,
+#daily-recommand .summer-recommand-container .content-intro-container.gladiator div .intro-title,
+#daily-recommand .summer-recommand-container .content-intro-container.op-chromite div .intro-title,
+#daily-recommand .summer-recommand-container .content-intro-container.aquaman div .intro-title,
+#daily-recommand .summer-recommand-container .content-intro-container.mr-sunshine div .intro-title,
+#daily-recommand .drama-recommand-container .content-intro-container.gladiator div .intro-title,
+#daily-recommand .drama-recommand-container .content-intro-container.op-chromite div .intro-title,
+#daily-recommand .drama-recommand-container .content-intro-container.aquaman div .intro-title,
+#daily-recommand .drama-recommand-container .content-intro-container.mr-sunshine div .intro-title,
+#monthly-recommand .daily-recommand-container .content-intro-container.gladiator div .intro-title,
+#monthly-recommand .daily-recommand-container .content-intro-container.op-chromite div .intro-title,
+#monthly-recommand .daily-recommand-container .content-intro-container.aquaman div .intro-title,
+#monthly-recommand .daily-recommand-container .content-intro-container.mr-sunshine div .intro-title,
+#monthly-recommand .monthly-recommand-container .content-intro-container.gladiator div .intro-title,
+#monthly-recommand .monthly-recommand-container .content-intro-container.op-chromite div .intro-title,
+#monthly-recommand .monthly-recommand-container .content-intro-container.aquaman div .intro-title,
+#monthly-recommand .monthly-recommand-container .content-intro-container.mr-sunshine div .intro-title,
+#monthly-recommand .summer-recommand-container .content-intro-container.gladiator div .intro-title,
+#monthly-recommand .summer-recommand-container .content-intro-container.op-chromite div .intro-title,
+#monthly-recommand .summer-recommand-container .content-intro-container.aquaman div .intro-title,
+#monthly-recommand .summer-recommand-container .content-intro-container.mr-sunshine div .intro-title,
+#monthly-recommand .drama-recommand-container .content-intro-container.gladiator div .intro-title,
+#monthly-recommand .drama-recommand-container .content-intro-container.op-chromite div .intro-title,
+#monthly-recommand .drama-recommand-container .content-intro-container.aquaman div .intro-title,
+#monthly-recommand .drama-recommand-container .content-intro-container.mr-sunshine div .intro-title,
+#summer-recommand .daily-recommand-container .content-intro-container.gladiator div .intro-title,
+#summer-recommand .daily-recommand-container .content-intro-container.op-chromite div .intro-title,
+#summer-recommand .daily-recommand-container .content-intro-container.aquaman div .intro-title,
+#summer-recommand .daily-recommand-container .content-intro-container.mr-sunshine div .intro-title,
+#summer-recommand .monthly-recommand-container .content-intro-container.gladiator div .intro-title,
+#summer-recommand .monthly-recommand-container .content-intro-container.op-chromite div .intro-title,
+#summer-recommand .monthly-recommand-container .content-intro-container.aquaman div .intro-title,
+#summer-recommand .monthly-recommand-container .content-intro-container.mr-sunshine div .intro-title,
+#summer-recommand .summer-recommand-container .content-intro-container.gladiator div .intro-title,
+#summer-recommand .summer-recommand-container .content-intro-container.op-chromite div .intro-title,
+#summer-recommand .summer-recommand-container .content-intro-container.aquaman div .intro-title,
+#summer-recommand .summer-recommand-container .content-intro-container.mr-sunshine div .intro-title,
+#summer-recommand .drama-recommand-container .content-intro-container.gladiator div .intro-title,
+#summer-recommand .drama-recommand-container .content-intro-container.op-chromite div .intro-title,
+#summer-recommand .drama-recommand-container .content-intro-container.aquaman div .intro-title,
+#summer-recommand .drama-recommand-container .content-intro-container.mr-sunshine div .intro-title,
+#drama-recommand .daily-recommand-container .content-intro-container.gladiator div .intro-title,
+#drama-recommand .daily-recommand-container .content-intro-container.op-chromite div .intro-title,
+#drama-recommand .daily-recommand-container .content-intro-container.aquaman div .intro-title,
+#drama-recommand .daily-recommand-container .content-intro-container.mr-sunshine div .intro-title,
+#drama-recommand .monthly-recommand-container .content-intro-container.gladiator div .intro-title,
+#drama-recommand .monthly-recommand-container .content-intro-container.op-chromite div .intro-title,
+#drama-recommand .monthly-recommand-container .content-intro-container.aquaman div .intro-title,
+#drama-recommand .monthly-recommand-container .content-intro-container.mr-sunshine div .intro-title,
+#drama-recommand .summer-recommand-container .content-intro-container.gladiator div .intro-title,
+#drama-recommand .summer-recommand-container .content-intro-container.op-chromite div .intro-title,
+#drama-recommand .summer-recommand-container .content-intro-container.aquaman div .intro-title,
+#drama-recommand .summer-recommand-container .content-intro-container.mr-sunshine div .intro-title,
+#drama-recommand .drama-recommand-container .content-intro-container.gladiator div .intro-title,
+#drama-recommand .drama-recommand-container .content-intro-container.op-chromite div .intro-title,
+#drama-recommand .drama-recommand-container .content-intro-container.aquaman div .intro-title,
+#drama-recommand .drama-recommand-container .content-intro-container.mr-sunshine div .intro-title {
+    font-size: 50px;
+    padding-top: 16px;
+  }
+  #daily-recommand .daily-recommand-container .content-intro-container.gladiator div .content-info,
+#daily-recommand .daily-recommand-container .content-intro-container.op-chromite div .content-info,
+#daily-recommand .daily-recommand-container .content-intro-container.aquaman div .content-info,
+#daily-recommand .daily-recommand-container .content-intro-container.mr-sunshine div .content-info,
+#daily-recommand .monthly-recommand-container .content-intro-container.gladiator div .content-info,
+#daily-recommand .monthly-recommand-container .content-intro-container.op-chromite div .content-info,
+#daily-recommand .monthly-recommand-container .content-intro-container.aquaman div .content-info,
+#daily-recommand .monthly-recommand-container .content-intro-container.mr-sunshine div .content-info,
+#daily-recommand .summer-recommand-container .content-intro-container.gladiator div .content-info,
+#daily-recommand .summer-recommand-container .content-intro-container.op-chromite div .content-info,
+#daily-recommand .summer-recommand-container .content-intro-container.aquaman div .content-info,
+#daily-recommand .summer-recommand-container .content-intro-container.mr-sunshine div .content-info,
+#daily-recommand .drama-recommand-container .content-intro-container.gladiator div .content-info,
+#daily-recommand .drama-recommand-container .content-intro-container.op-chromite div .content-info,
+#daily-recommand .drama-recommand-container .content-intro-container.aquaman div .content-info,
+#daily-recommand .drama-recommand-container .content-intro-container.mr-sunshine div .content-info,
+#monthly-recommand .daily-recommand-container .content-intro-container.gladiator div .content-info,
+#monthly-recommand .daily-recommand-container .content-intro-container.op-chromite div .content-info,
+#monthly-recommand .daily-recommand-container .content-intro-container.aquaman div .content-info,
+#monthly-recommand .daily-recommand-container .content-intro-container.mr-sunshine div .content-info,
+#monthly-recommand .monthly-recommand-container .content-intro-container.gladiator div .content-info,
+#monthly-recommand .monthly-recommand-container .content-intro-container.op-chromite div .content-info,
+#monthly-recommand .monthly-recommand-container .content-intro-container.aquaman div .content-info,
+#monthly-recommand .monthly-recommand-container .content-intro-container.mr-sunshine div .content-info,
+#monthly-recommand .summer-recommand-container .content-intro-container.gladiator div .content-info,
+#monthly-recommand .summer-recommand-container .content-intro-container.op-chromite div .content-info,
+#monthly-recommand .summer-recommand-container .content-intro-container.aquaman div .content-info,
+#monthly-recommand .summer-recommand-container .content-intro-container.mr-sunshine div .content-info,
+#monthly-recommand .drama-recommand-container .content-intro-container.gladiator div .content-info,
+#monthly-recommand .drama-recommand-container .content-intro-container.op-chromite div .content-info,
+#monthly-recommand .drama-recommand-container .content-intro-container.aquaman div .content-info,
+#monthly-recommand .drama-recommand-container .content-intro-container.mr-sunshine div .content-info,
+#summer-recommand .daily-recommand-container .content-intro-container.gladiator div .content-info,
+#summer-recommand .daily-recommand-container .content-intro-container.op-chromite div .content-info,
+#summer-recommand .daily-recommand-container .content-intro-container.aquaman div .content-info,
+#summer-recommand .daily-recommand-container .content-intro-container.mr-sunshine div .content-info,
+#summer-recommand .monthly-recommand-container .content-intro-container.gladiator div .content-info,
+#summer-recommand .monthly-recommand-container .content-intro-container.op-chromite div .content-info,
+#summer-recommand .monthly-recommand-container .content-intro-container.aquaman div .content-info,
+#summer-recommand .monthly-recommand-container .content-intro-container.mr-sunshine div .content-info,
+#summer-recommand .summer-recommand-container .content-intro-container.gladiator div .content-info,
+#summer-recommand .summer-recommand-container .content-intro-container.op-chromite div .content-info,
+#summer-recommand .summer-recommand-container .content-intro-container.aquaman div .content-info,
+#summer-recommand .summer-recommand-container .content-intro-container.mr-sunshine div .content-info,
+#summer-recommand .drama-recommand-container .content-intro-container.gladiator div .content-info,
+#summer-recommand .drama-recommand-container .content-intro-container.op-chromite div .content-info,
+#summer-recommand .drama-recommand-container .content-intro-container.aquaman div .content-info,
+#summer-recommand .drama-recommand-container .content-intro-container.mr-sunshine div .content-info,
+#drama-recommand .daily-recommand-container .content-intro-container.gladiator div .content-info,
+#drama-recommand .daily-recommand-container .content-intro-container.op-chromite div .content-info,
+#drama-recommand .daily-recommand-container .content-intro-container.aquaman div .content-info,
+#drama-recommand .daily-recommand-container .content-intro-container.mr-sunshine div .content-info,
+#drama-recommand .monthly-recommand-container .content-intro-container.gladiator div .content-info,
+#drama-recommand .monthly-recommand-container .content-intro-container.op-chromite div .content-info,
+#drama-recommand .monthly-recommand-container .content-intro-container.aquaman div .content-info,
+#drama-recommand .monthly-recommand-container .content-intro-container.mr-sunshine div .content-info,
+#drama-recommand .summer-recommand-container .content-intro-container.gladiator div .content-info,
+#drama-recommand .summer-recommand-container .content-intro-container.op-chromite div .content-info,
+#drama-recommand .summer-recommand-container .content-intro-container.aquaman div .content-info,
+#drama-recommand .summer-recommand-container .content-intro-container.mr-sunshine div .content-info,
+#drama-recommand .drama-recommand-container .content-intro-container.gladiator div .content-info,
+#drama-recommand .drama-recommand-container .content-intro-container.op-chromite div .content-info,
+#drama-recommand .drama-recommand-container .content-intro-container.aquaman div .content-info,
+#drama-recommand .drama-recommand-container .content-intro-container.mr-sunshine div .content-info {
+    font-size: 12px;
+  }
+  #daily-recommand .daily-recommand-slider-container,
+#daily-recommand .monthly-recommand-slider-container,
+#daily-recommand .summer-recommand-slider-container,
+#daily-recommand .drama-recommand-slider-container,
+#monthly-recommand .daily-recommand-slider-container,
+#monthly-recommand .monthly-recommand-slider-container,
+#monthly-recommand .summer-recommand-slider-container,
+#monthly-recommand .drama-recommand-slider-container,
+#summer-recommand .daily-recommand-slider-container,
+#summer-recommand .monthly-recommand-slider-container,
+#summer-recommand .summer-recommand-slider-container,
+#summer-recommand .drama-recommand-slider-container,
+#drama-recommand .daily-recommand-slider-container,
+#drama-recommand .monthly-recommand-slider-container,
+#drama-recommand .summer-recommand-slider-container,
+#drama-recommand .drama-recommand-slider-container {
+    bottom: 0;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #daily-recommand {
+    background-image: url("../img/태블릿 - 메인 - 글래디에이터.jpg");
+  }
+
+  #monthly-recommand {
+    background-image: url("../img/태블릿 - 메인 - 인천상륙작전.jpg");
+  }
+
+  #summer-recommand {
+    background-image: url("../img/태블릿 - 메인 - 아쿠아맨.jpg");
+  }
+
+  #drama-recommand {
+    background-image: url("../img/태블릿 - 메인 - 미스터 션샤인.jpg");
+  }
+
+  #daily-recommand,
+#monthly-recommand,
+#summer-recommand,
+#drama-recommand {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    background-size: contain;
+  }
+  #daily-recommand .bx-wrapper,
+#monthly-recommand .bx-wrapper,
+#summer-recommand .bx-wrapper,
+#drama-recommand .bx-wrapper {
+    margin: 0;
+    bottom: 0;
+  }
+
+  .daily-recommand-slider-container,
+.monthly-recommand-slider-container,
+.summer-recommand-slider-container,
+.drama-recommand-slider-container {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    background: linear-gradient(transparent 10%, #040713 20%);
+    height: 52%;
+    bottom: 0;
+  }
+}
+@media screen and (max-width: 430px) {
+  #editor-recommand .editor-title .label,
+#editor-recommand .daily-title .label,
+#editor-recommand .monthly-title .label,
+#editor-recommand .summer-title .label,
+#editor-recommand .drama-title .label,
+#daily-recommand .editor-title .label,
+#daily-recommand .daily-title .label,
+#daily-recommand .monthly-title .label,
+#daily-recommand .summer-title .label,
+#daily-recommand .drama-title .label,
+#monthly-recommand .editor-title .label,
+#monthly-recommand .daily-title .label,
+#monthly-recommand .monthly-title .label,
+#monthly-recommand .summer-title .label,
+#monthly-recommand .drama-title .label,
+#summer-recommand .editor-title .label,
+#summer-recommand .daily-title .label,
+#summer-recommand .monthly-title .label,
+#summer-recommand .summer-title .label,
+#summer-recommand .drama-title .label,
+#drama-recommand .editor-title .label,
+#drama-recommand .daily-title .label,
+#drama-recommand .monthly-title .label,
+#drama-recommand .summer-title .label,
+#drama-recommand .drama-title .label {
+    font-size: 16px;
+  }
+}
+/* common end -------------------------------------------------------------------------------- */
+/* fixed start -------------------------------------------------------------------------------------- */
+@media screen and (max-width: 800px) {
+  .top-btn {
+    width: 38px;
+    height: 38px;
+    bottom: 72px;
+    font-size: 12px;
+  }
+
+  .fixed .fixed-tab {
+    right: -100%;
+    width: 60px;
+    height: 50px;
+  }
+  .fixed .fixed-tab .fixed-tab-inner h3 {
+    font-size: 16px;
+  }
+  .fixed .fixed-tab .fixed-tab-inner p {
+    font-size: 8px;
+  }
+  .fixed .sidebar {
+    width: 100%;
+  }
+  .fixed .sidebar .sidebar-container div h1 {
+    font-size: 30px;
+  }
+  .fixed .sidebar .sidebar-container div p {
+    font-size: 20px;
+  }
+
+  .promotion .promotion-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+  }
+  .promotion .promotion-container .text-container p {
+    font-size: 10px;
+  }
+
+  .promotion .promotion-container {
+    height: 40px;
+    /* padding: 8px 0; */
+  }
+  .promotion .promotion-container .promotion-btn-container button {
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .promotion .promotion-container .promotion-btn-container button span {
+    font-size: 10px;
+  }
+}
+/* fixed start -------------------------------------------------------------------------------------- */
